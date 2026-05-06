@@ -256,7 +256,7 @@ export function renderLibrary() {
       </div>
 
       <button class="nav-button" onclick="location.hash='#'" style="margin: 2rem auto; display: flex;">
-        ← [ НА ГЛАВНУЮ ]
+        [ НА ГЛАВНУЮ ]
       </button>
     </div>
 
