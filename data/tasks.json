@@ -1,0 +1,3602 @@
+[
+  {
+    "id": 1,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "ПРИВЕТ",
+    "ciphertext": "РСЙГЁУ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 2,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "ШИФР",
+    "ciphertext": "ЩЙХС",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 3,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "ТАЙНА",
+    "ciphertext": "УБКОБ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 4,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "КЛЮЧ",
+    "ciphertext": "ЛМЯШ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 5,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "КОД",
+    "ciphertext": "ЛПЕ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 6,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "ЩИТ",
+    "ciphertext": "ЪЙУ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 7,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "МЕЧ",
+    "ciphertext": "НЁШ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 8,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "СВЕТ",
+    "ciphertext": "ТГЁУ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 9,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "ТЬМА",
+    "ciphertext": "УЭНБ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 10,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "ЗНАК",
+    "ciphertext": "ИОБЛ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 11,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "ВЕТЕР",
+    "ciphertext": "ГЁУЁС",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 12,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "ГОЛОС",
+    "ciphertext": "ДПМПТ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 13,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "СТЕНА",
+    "ciphertext": "ТУЁОБ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 14,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "МОСТ",
+    "ciphertext": "НПТУ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 15,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "ЗАМОК",
+    "ciphertext": "ИБНПЛ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 16,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "СЛЕД",
+    "ciphertext": "ТМЁЕ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 17,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "ПУТЬ",
+    "ciphertext": "РФУЭ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 18,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "ДОЖДЬ",
+    "ciphertext": "ЕПЗЕЭ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 19,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "ЗВУК",
+    "ciphertext": "ИГФЛ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 20,
+    "cipher": "caesar",
+    "level": 1,
+    "plaintext": "МАЯК",
+    "ciphertext": "НБАЛ",
+    "settings": {
+      "shift": 3
+    },
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 21,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "СЕКРЕТНЫЙ КОД",
+    "ciphertext": "УЖМТЖФПЭЛ МРЁ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 22,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "ТАЙНОЕ ПОСЛАНИЕ",
+    "ciphertext": "ФВЛПРЖ СРУНВПКЖ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 23,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "ШИФР ЦЕЗАРЯ",
+    "ciphertext": "ЪКЦТ ШЖЙВТБ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 24,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "ВЗЛОМ ШИФРА",
+    "ciphertext": "ДЙНРО ЪКЦТВ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 25,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "ЗАЩИТА ДАННЫХ",
+    "ciphertext": "ЙВЫКФВ ЁВППЭЧ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 26,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "КЛЮЧ ШИФРОВАНИЯ",
+    "ciphertext": "МНАЩ ЪКЦТРДВПКБ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 27,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "ТАЙНАЯ ОПЕРАЦИЯ",
+    "ciphertext": "ФВЛПВБ РСЖТВШКБ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 28,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "СЕКРЕТНАЯ МИССИЯ",
+    "ciphertext": "УЖМТЖФПВБ ОКУУКБ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 29,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "КОДОВОЕ СЛОВО",
+    "ciphertext": "МРЁРДРЖ УНРДР",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 30,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "АГЕНТ ПОД ПРИКРЫТИЕМ",
+    "ciphertext": "ВЕЖПФ СРЁ СТКМТЭФКЖО",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 31,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "ШИФРОВАННЫЙ КАНАЛ",
+    "ciphertext": "ЪКЦТРДВППЭЛ МВПВН",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 32,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "ТАЙНЫЙ АГЕНТ",
+    "ciphertext": "ФВЛПЭЛ ВЕЖПФ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 33,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "СЕКРЕТНАЯ КОМНАТА",
+    "ciphertext": "УЖМТЖФПВБ МРОПВФВ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 34,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "ЗАШИФРОВАННЫЙ ТЕКСТ",
+    "ciphertext": "ЙВЪКЦТРДВППЭЛ ФЖМУФ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 35,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "КРИПТОГРАФИЧЕСКИЙ КЛЮЧ",
+    "ciphertext": "МТКСФРЕТВЦКЩЖУМКЛ МНАЩ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 36,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "ТАЙНАЯ ПЕРЕПИСКА",
+    "ciphertext": "ФВЛПВБ СЖТЖСКУМВ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 37,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "СЕКРЕТНЫЙ АРХИВ",
+    "ciphertext": "УЖМТЖФПЭЛ ВТЧКД",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 38,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "ШИФРОВАЛЬНАЯ МАШИНА",
+    "ciphertext": "ЪКЦТРДВНЮПВБ ОВЪКПВ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 39,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "ТАЙНЫЙ ШИФР",
+    "ciphertext": "ФВЛПЭЛ ЪКЦТ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 40,
+    "cipher": "caesar",
+    "level": 2,
+    "plaintext": "КРИПТОАНАЛИТИК",
+    "ciphertext": "МТКСФРВПВНКФКМ",
+    "settings": {
+      "shift": 7
+    },
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 41,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "ПРИШЁЛ УВИДЕЛ ПОБЕДИЛ",
+    "ciphertext": "ТУЛЫИО ЦЕЛЖЗО ТСДЗЖЛО",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 42,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "ЗНАНИЕ ЭТО СИЛА",
+    "ciphertext": "КРГРЛЗ АХС ФЛОГ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 43,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "ИНФОРМАЦИЯ ПРАВИТ МИРОМ",
+    "ciphertext": "ЛРЧСУПГЩЛВ ТУГЕЛХ ПЛУСП",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 44,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "ШИФРЫ МЕНЯЮТ ИСТОРИЮ",
+    "ciphertext": "ЫЛЧУЮ ПЗРВБХ ЛФХСУЛБ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 45,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "ТАЙНЫ ДОЛЖНЫ ОСТАВАТЬСЯ ТАЙНАМИ",
+    "ciphertext": "ХГМРЮ ЖСОЙРЮ СФХГЕГХЯФВ ХГМРГПЛ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 46,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "КРИПТОГРАФИЯ НАУКА О СЕКРЕТАХ",
+    "ciphertext": "НУЛТХСЁУГЧЛВ РГЦНГ С ФЗНУЗХГШ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 47,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "КАЖДЫЙ ШИФР МОЖНО ВЗЛОМАТЬ",
+    "ciphertext": "НГЙЖЮМ ЫЛЧУ ПСЙРС ЕКОСПГХЯ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 48,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "БЕЗОПАСНОСТЬ ПРЕВЫШЕ ВСЕГО",
+    "ciphertext": "ДЗКСТГФРСФХЯ ТУЗЕЮЫЗ ЕФЗЁС",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 49,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "ДОВЕРЯЙ НО ПРОВЕРЯЙ",
+    "ciphertext": "ЖСЕЗУВМ РС ТУСЕЗУВМ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 50,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "ШИФРОВАНИЕ СПАСАЕТ ЖИЗНИ",
+    "ciphertext": "ЫЛЧУСЕГРЛЗ ФТГФГЗХ ЙЛКРЛ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 51,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "СЛОЖНЫЙ ПАРОЛЬ ЗАЛОГ УСПЕХА",
+    "ciphertext": "ФОСЙРЮМ ТГУСОЯ КГОСЁ ЦФТЗШГ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 52,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "ТАЙНАЯ СВЯЗЬ РЕШАЕТ ИСХОД ВОЙНЫ",
+    "ciphertext": "ХГМРГВ ФЕВКЯ УЗЫГЗХ ЛФШСЖ ЕСМРЮ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 53,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "КРИПТОГРАФЫ ГЕРОИ НЕВИДИМОГО ФРОНТА",
+    "ciphertext": "НУЛТХСЁУГЧЮ ЁЗУСЛ РЗЕЛЖЛПСЁС ЧУСРХГ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 54,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "СЕКРЕТНАЯ ИНФОРМАЦИЯ ЦЕННЕЕ ЗОЛОТА",
+    "ciphertext": "ФЗНУЗХРГВ ЛРЧСУПГЩЛВ ЩЗРРЗЗ КСОСХГ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 55,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "ВЗЛОМ ШИФРА ЭТО ИСКУССТВО",
+    "ciphertext": "ЕКОСП ЫЛЧУГ АХС ЛФНЦФФХЕС",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 56,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "МАТЕМАТИКА ОСНОВА КРИПТОГРАФИИ",
+    "ciphertext": "ПГХЗПГХЛНГ СФРСЕГ НУЛТХСЁУГЧЛЛ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 57,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "КВАНТОВЫЕ КОМПЬЮТЕРЫ УГРОЗА ШИФРАМ",
+    "ciphertext": "НЕГРХСЕЮЗ НСПТЯБХЗУЮ ЦЁУСКГ ЫЛЧУГП",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 58,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "ИСТОРИЯ ШИФРОВ ЭТО ИСТОРИЯ ВОЙН",
+    "ciphertext": "ЛФХСУЛВ ЫЛЧУСЕ АХС ЛФХСУЛВ ЕСМР",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 59,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "ЗАЩИТА ИНФОРМАЦИИ ЭТО ЗАЩИТА СВОБОДЫ",
+    "ciphertext": "КГЬЛХГ ЛРЧСУПГЩЛЛ АХС КГЬЛХГ ФЕСДСЖЮ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 60,
+    "cipher": "caesar",
+    "level": 3,
+    "plaintext": "НАСТОЯЩАЯ ТАЙНА НЕВИДИМА",
+    "ciphertext": "РГФХСВЬГВ ХГМРГ РЗЕЛЖЛПГ",
+    "settings": {
+      "shift": 11
+    },
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 61,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "ПРИВЕТ",
+    "ciphertext": "ПОЦЭЪМ",
+    "settings": {},
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 62,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "ШИФР",
+    "ciphertext": "ЖЦКО",
+    "settings": {},
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 63,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "ТАЙНА",
+    "ciphertext": "МЯХСЯ",
+    "settings": {},
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 64,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "КЛЮЧ",
+    "ciphertext": "ФУБЗ",
+    "settings": {},
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 65,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "КОД",
+    "ciphertext": "ФРЫ",
+    "settings": {},
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 66,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "ЩИТ",
+    "ciphertext": "ЁЦМ",
+    "settings": {},
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 67,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "МЕЧ",
+    "ciphertext": "ТЪЗ",
+    "settings": {},
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 68,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "СВЕТ",
+    "ciphertext": "НЭЪМ",
+    "settings": {},
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 69,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "ТЬМА",
+    "ciphertext": "МГТЯ",
+    "settings": {},
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 70,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "ЗНАК",
+    "ciphertext": "ЧСЯФ",
+    "settings": {},
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 71,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "ВЕТЕР",
+    "ciphertext": "ЭЪМЪО",
+    "settings": {},
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 72,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "ГОЛОС",
+    "ciphertext": "ЬРУРН",
+    "settings": {},
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 73,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "СТЕНА",
+    "ciphertext": "НМЪСЯ",
+    "settings": {},
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 74,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "МОСТ",
+    "ciphertext": "ТРНМ",
+    "settings": {},
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 75,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "ЗАМОК",
+    "ciphertext": "ЧЯТРФ",
+    "settings": {},
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 76,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "СЛЕД",
+    "ciphertext": "НУЪЫ",
+    "settings": {},
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 77,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "ПУТЬ",
+    "ciphertext": "ПЛМГ",
+    "settings": {},
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 78,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "ДОЖДЬ",
+    "ciphertext": "ЫРШЫГ",
+    "settings": {},
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 79,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "ЗВУК",
+    "ciphertext": "ЧЭЛФ",
+    "settings": {},
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 80,
+    "cipher": "atbash",
+    "level": 1,
+    "plaintext": "МАЯК",
+    "ciphertext": "ТЯАФ",
+    "settings": {},
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 81,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "СЕКРЕТНЫЙ КОД",
+    "ciphertext": "НЪФОЪМСДХ ФРЫ",
+    "settings": {},
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 82,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "ТАЙНОЕ ПОСЛАНИЕ",
+    "ciphertext": "МЯХСРЪ ПРНУЯСЦЪ",
+    "settings": {},
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 83,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "ШИФР ЦЕЗАРЯ",
+    "ciphertext": "ЖЦКО ИЪЧЯОА",
+    "settings": {},
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 84,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "ВЗЛОМ ШИФРА",
+    "ciphertext": "ЭЧУРТ ЖЦКОЯ",
+    "settings": {},
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 85,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "ЗАЩИТА ДАННЫХ",
+    "ciphertext": "ЧЯЁЦМЯ ЫЯССДЙ",
+    "settings": {},
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 86,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "КЛЮЧ ШИФРОВАНИЯ",
+    "ciphertext": "ФУБЗ ЖЦКОРЭЯСЦА",
+    "settings": {},
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 87,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "ТАЙНАЯ ОПЕРАЦИЯ",
+    "ciphertext": "МЯХСЯА РПЪОЯИЦА",
+    "settings": {},
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 88,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "СЕКРЕТНАЯ МИССИЯ",
+    "ciphertext": "НЪФОЪМСЯА ТЦННЦА",
+    "settings": {},
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 89,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "КОДОВОЕ СЛОВО",
+    "ciphertext": "ФРЫРЭРЪ НУРЭР",
+    "settings": {},
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 90,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "АГЕНТ ПОД ПРИКРЫТИЕМ",
+    "ciphertext": "ЯЬЪСМ ПРЫ ПОЦФОДМЦЪТ",
+    "settings": {},
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 91,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "ШИФРОВАННЫЙ КАНАЛ",
+    "ciphertext": "ЖЦКОРЭЯССДХ ФЯСЯУ",
+    "settings": {},
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 92,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "ТАЙНЫЙ АГЕНТ",
+    "ciphertext": "МЯХСДХ ЯЬЪСМ",
+    "settings": {},
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 93,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "СЕКРЕТНАЯ КОМНАТА",
+    "ciphertext": "НЪФОЪМСЯА ФРТСЯМЯ",
+    "settings": {},
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 94,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "ЗАШИФРОВАННЫЙ ТЕКСТ",
+    "ciphertext": "ЧЯЖЦКОРЭЯССДХ МЪФНМ",
+    "settings": {},
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 95,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "КРИПТОГРАФИЧЕСКИЙ КЛЮЧ",
+    "ciphertext": "ФОЦПМРЬОЯКЦЗЪНФЦХ ФУБЗ",
+    "settings": {},
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 96,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "ТАЙНАЯ ПЕРЕПИСКА",
+    "ciphertext": "МЯХСЯА ПЪОЪПЦНФЯ",
+    "settings": {},
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 97,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "СЕКРЕТНЫЙ АРХИВ",
+    "ciphertext": "НЪФОЪМСДХ ЯОЙЦЭ",
+    "settings": {},
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 98,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "ШИФРОВАЛЬНАЯ МАШИНА",
+    "ciphertext": "ЖЦКОРЭЯУГСЯА ТЯЖЦСЯ",
+    "settings": {},
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 99,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "ТАЙНЫЙ ШИФР",
+    "ciphertext": "МЯХСДХ ЖЦКО",
+    "settings": {},
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 100,
+    "cipher": "atbash",
+    "level": 2,
+    "plaintext": "КРИПТОАНАЛИТИК",
+    "ciphertext": "ФОЦПМРЯСЯУЦМЦФ",
+    "settings": {},
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 101,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "ПРИШЁЛ УВИДЕЛ ПОБЕДИЛ",
+    "ciphertext": "ПОЦЖЩУ ЛЭЦЫЪУ ПРЮЪЫЦУ",
+    "settings": {},
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 102,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "ЗНАНИЕ ЭТО СИЛА",
+    "ciphertext": "ЧСЯСЦЪ ВМР НЦУЯ",
+    "settings": {},
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 103,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "ИНФОРМАЦИЯ ПРАВИТ МИРОМ",
+    "ciphertext": "ЦСКРОТЯИЦА ПОЯЭЦМ ТЦОРТ",
+    "settings": {},
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 104,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "ШИФРЫ МЕНЯЮТ ИСТОРИЮ",
+    "ciphertext": "ЖЦКОД ТЪСАБМ ЦНМРОЦБ",
+    "settings": {},
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 105,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "ТАЙНЫ ДОЛЖНЫ ОСТАВАТЬСЯ ТАЙНАМИ",
+    "ciphertext": "МЯХСД ЫРУШСД РНМЯЭЯМГНА МЯХСЯТЦ",
+    "settings": {},
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 106,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "КРИПТОГРАФИЯ НАУКА О СЕКРЕТАХ",
+    "ciphertext": "ФОЦПМРЬОЯКЦА СЯЛФЯ Р НЪФОЪМЯЙ",
+    "settings": {},
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 107,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "КАЖДЫЙ ШИФР МОЖНО ВЗЛОМАТЬ",
+    "ciphertext": "ФЯШЫДХ ЖЦКО ТРШСР ЭЧУРТЯМГ",
+    "settings": {},
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 108,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "БЕЗОПАСНОСТЬ ПРЕВЫШЕ ВСЕГО",
+    "ciphertext": "ЮЪЧРПЯНСРНМГ ПОЪЭДЖЪ ЭНЪЬР",
+    "settings": {},
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 109,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "ДОВЕРЯЙ НО ПРОВЕРЯЙ",
+    "ciphertext": "ЫРЭЪОАХ СР ПОРЭЪОАХ",
+    "settings": {},
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 110,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "ШИФРОВАНИЕ СПАСАЕТ ЖИЗНИ",
+    "ciphertext": "ЖЦКОРЭЯСЦЪ НПЯНЯЪМ ШЦЧСЦ",
+    "settings": {},
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 111,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "СЛОЖНЫЙ ПАРОЛЬ ЗАЛОГ УСПЕХА",
+    "ciphertext": "НУРШСДХ ПЯОРУГ ЧЯУРЬ ЛНПЪЙЯ",
+    "settings": {},
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 112,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "ТАЙНАЯ СВЯЗЬ РЕШАЕТ ИСХОД ВОЙНЫ",
+    "ciphertext": "МЯХСЯА НЭАЧГ ОЪЖЯЪМ ЦНЙРЫ ЭРХСД",
+    "settings": {},
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 113,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "КРИПТОГРАФЫ ГЕРОИ НЕВИДИМОГО ФРОНТА",
+    "ciphertext": "ФОЦПМРЬОЯКД ЬЪОРЦ СЪЭЦЫЦТРЬР КОРСМЯ",
+    "settings": {},
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 114,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "СЕКРЕТНАЯ ИНФОРМАЦИЯ ЦЕННЕЕ ЗОЛОТА",
+    "ciphertext": "НЪФОЪМСЯА ЦСКРОТЯИЦА ИЪССЪЪ ЧРУРМЯ",
+    "settings": {},
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 115,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "ВЗЛОМ ШИФРА ЭТО ИСКУССТВО",
+    "ciphertext": "ЭЧУРТ ЖЦКОЯ ВМР ЦНФЛННМЭР",
+    "settings": {},
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 116,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "МАТЕМАТИКА ОСНОВА КРИПТОГРАФИИ",
+    "ciphertext": "ТЯМЪТЯМЦФЯ РНСРЭЯ ФОЦПМРЬОЯКЦЦ",
+    "settings": {},
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 117,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "КВАНТОВЫЕ КОМПЬЮТЕРЫ УГРОЗА ШИФРАМ",
+    "ciphertext": "ФЭЯСМРЭДЪ ФРТПГБМЪОД ЛЬОРЧЯ ЖЦКОЯТ",
+    "settings": {},
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 118,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "ИСТОРИЯ ШИФРОВ ЭТО ИСТОРИЯ ВОЙН",
+    "ciphertext": "ЦНМРОЦА ЖЦКОРЭ ВМР ЦНМРОЦА ЭРХС",
+    "settings": {},
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 119,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "ЗАЩИТА ИНФОРМАЦИИ ЭТО ЗАЩИТА СВОБОДЫ",
+    "ciphertext": "ЧЯЁЦМЯ ЦСКРОТЯИЦЦ ВМР ЧЯЁЦМЯ НЭРЮРЫД",
+    "settings": {},
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 120,
+    "cipher": "atbash",
+    "level": 3,
+    "plaintext": "НАСТОЯЩАЯ ТАЙНА НЕВИДИМА",
+    "ciphertext": "СЯНМРАЁЯА МЯХСЯ СЪЭЦЫЦТЯ",
+    "settings": {},
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 121,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "ПРИВЕТ",
+    "ciphertext": "35 41 24 13 21 43",
+    "settings": {},
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 122,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "ШИФР",
+    "ciphertext": "54 24 45 41",
+    "settings": {},
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 123,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "ТАЙНА",
+    "ciphertext": "43 11 24 33 11",
+    "settings": {},
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 124,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "КЛЮЧ",
+    "ciphertext": "25 31 44 53",
+    "settings": {},
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 125,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "КОД",
+    "ciphertext": "25 34 15",
+    "settings": {},
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 126,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "ЩИТ",
+    "ciphertext": "55 24 43",
+    "settings": {},
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 127,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "МЕЧ",
+    "ciphertext": "32 21 53",
+    "settings": {},
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 128,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "СВЕТ",
+    "ciphertext": "42 13 21 43",
+    "settings": {},
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 129,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "ТЬМА",
+    "ciphertext": "43 ?? 32 11",
+    "settings": {},
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 130,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "ЗНАК",
+    "ciphertext": "23 33 11 25",
+    "settings": {},
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 131,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "ВЕТЕР",
+    "ciphertext": "13 21 43 21 41",
+    "settings": {},
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 132,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "ГОЛОС",
+    "ciphertext": "14 34 31 34 42",
+    "settings": {},
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 133,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "СТЕНА",
+    "ciphertext": "42 43 21 33 11",
+    "settings": {},
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 134,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "МОСТ",
+    "ciphertext": "32 34 42 43",
+    "settings": {},
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 135,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "ЗАМОК",
+    "ciphertext": "23 11 32 34 25",
+    "settings": {},
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 136,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "СЛЕД",
+    "ciphertext": "42 31 21 15",
+    "settings": {},
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 137,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "ПУТЬ",
+    "ciphertext": "35 44 43 ??",
+    "settings": {},
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 138,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "ДОЖДЬ",
+    "ciphertext": "15 34 22 15 ??",
+    "settings": {},
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 139,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "ЗВУК",
+    "ciphertext": "23 13 44 25",
+    "settings": {},
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 140,
+    "cipher": "polybius",
+    "level": 1,
+    "plaintext": "МАЯК",
+    "ciphertext": "32 11 11 25",
+    "settings": {},
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 141,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "СЕКРЕТНЫЙ КОД",
+    "ciphertext": "42 21 25 41 21 43 33 ?? 24    25 34 15",
+    "settings": {},
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 142,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "ТАЙНОЕ ПОСЛАНИЕ",
+    "ciphertext": "43 11 24 33 34 21    35 34 42 31 11 33 24 21",
+    "settings": {},
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 143,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "ШИФР ЦЕЗАРЯ",
+    "ciphertext": "54 24 45 41    52 21 23 11 41 11",
+    "settings": {},
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 144,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "ВЗЛОМ ШИФРА",
+    "ciphertext": "13 23 31 34 32    54 24 45 41 11",
+    "settings": {},
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 145,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "ЗАЩИТА ДАННЫХ",
+    "ciphertext": "23 11 55 24 43 11    15 11 33 33 ?? 51",
+    "settings": {},
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 146,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "КЛЮЧ ШИФРОВАНИЯ",
+    "ciphertext": "25 31 44 53    54 24 45 41 34 13 11 33 24 11",
+    "settings": {},
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 147,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "ТАЙНАЯ ОПЕРАЦИЯ",
+    "ciphertext": "43 11 24 33 11 11    34 35 21 41 11 52 24 11",
+    "settings": {},
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 148,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "СЕКРЕТНАЯ МИССИЯ",
+    "ciphertext": "42 21 25 41 21 43 33 11 11    32 24 42 42 24 11",
+    "settings": {},
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 149,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "КОДОВОЕ СЛОВО",
+    "ciphertext": "25 34 15 34 13 34 21    42 31 34 13 34",
+    "settings": {},
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 150,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "АГЕНТ ПОД ПРИКРЫТИЕМ",
+    "ciphertext": "11 14 21 33 43    35 34 15    35 41 24 25 41 ?? 43 24 21 32",
+    "settings": {},
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 151,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "ШИФРОВАННЫЙ КАНАЛ",
+    "ciphertext": "54 24 45 41 34 13 11 33 33 ?? 24    25 11 33 11 31",
+    "settings": {},
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 152,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "ТАЙНЫЙ АГЕНТ",
+    "ciphertext": "43 11 24 33 ?? 24    11 14 21 33 43",
+    "settings": {},
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 153,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "СЕКРЕТНАЯ КОМНАТА",
+    "ciphertext": "42 21 25 41 21 43 33 11 11    25 34 32 33 11 43 11",
+    "settings": {},
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 154,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "ЗАШИФРОВАННЫЙ ТЕКСТ",
+    "ciphertext": "23 11 54 24 45 41 34 13 11 33 33 ?? 24    43 21 25 42 43",
+    "settings": {},
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 155,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "КРИПТОГРАФИЧЕСКИЙ КЛЮЧ",
+    "ciphertext": "25 41 24 35 43 34 14 41 11 45 24 53 21 42 25 24 24    25 31 44 53",
+    "settings": {},
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 156,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "ТАЙНАЯ ПЕРЕПИСКА",
+    "ciphertext": "43 11 24 33 11 11    35 21 41 21 35 24 42 25 11",
+    "settings": {},
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 157,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "СЕКРЕТНЫЙ АРХИВ",
+    "ciphertext": "42 21 25 41 21 43 33 ?? 24    11 41 51 24 13",
+    "settings": {},
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 158,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "ШИФРОВАЛЬНАЯ МАШИНА",
+    "ciphertext": "54 24 45 41 34 13 11 31 ?? 33 11 11    32 11 54 24 33 11",
+    "settings": {},
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 159,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "ТАЙНЫЙ ШИФР",
+    "ciphertext": "43 11 24 33 ?? 24    54 24 45 41",
+    "settings": {},
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 160,
+    "cipher": "polybius",
+    "level": 2,
+    "plaintext": "КРИПТОАНАЛИТИК",
+    "ciphertext": "25 41 24 35 43 34 11 33 11 31 24 43 24 25",
+    "settings": {},
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 161,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "ПРИШЁЛ УВИДЕЛ ПОБЕДИЛ",
+    "ciphertext": "35 41 24 54 21 31    44 13 24 15 21 31    35 34 12 21 15 24 31",
+    "settings": {},
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 162,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "ЗНАНИЕ ЭТО СИЛА",
+    "ciphertext": "23 33 11 33 24 21    21 43 34    42 24 31 11",
+    "settings": {},
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 163,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "ИНФОРМАЦИЯ ПРАВИТ МИРОМ",
+    "ciphertext": "24 33 45 34 41 32 11 52 24 11    35 41 11 13 24 43    32 24 41 34 32",
+    "settings": {},
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 164,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "ШИФРЫ МЕНЯЮТ ИСТОРИЮ",
+    "ciphertext": "54 24 45 41 ??    32 21 33 11 44 43    24 42 43 34 41 24 44",
+    "settings": {},
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 165,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "ТАЙНЫ ДОЛЖНЫ ОСТАВАТЬСЯ ТАЙНАМИ",
+    "ciphertext": "43 11 24 33 ??    15 34 31 22 33 ??    34 42 43 11 13 11 43 ?? 42 11    43 11 24 33 11 32 24",
+    "settings": {},
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 166,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "КРИПТОГРАФИЯ НАУКА О СЕКРЕТАХ",
+    "ciphertext": "25 41 24 35 43 34 14 41 11 45 24 11    33 11 44 25 11    34    42 21 25 41 21 43 11 51",
+    "settings": {},
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 167,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "КАЖДЫЙ ШИФР МОЖНО ВЗЛОМАТЬ",
+    "ciphertext": "25 11 22 15 ?? 24    54 24 45 41    32 34 22 33 34    13 23 31 34 32 11 43 ??",
+    "settings": {},
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 168,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "БЕЗОПАСНОСТЬ ПРЕВЫШЕ ВСЕГО",
+    "ciphertext": "12 21 23 34 35 11 42 33 34 42 43 ??    35 41 21 13 ?? 54 21    13 42 21 14 34",
+    "settings": {},
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 169,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "ДОВЕРЯЙ НО ПРОВЕРЯЙ",
+    "ciphertext": "15 34 13 21 41 11 24    33 34    35 41 34 13 21 41 11 24",
+    "settings": {},
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 170,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "ШИФРОВАНИЕ СПАСАЕТ ЖИЗНИ",
+    "ciphertext": "54 24 45 41 34 13 11 33 24 21    42 35 11 42 11 21 43    22 24 23 33 24",
+    "settings": {},
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 171,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "СЛОЖНЫЙ ПАРОЛЬ ЗАЛОГ УСПЕХА",
+    "ciphertext": "42 31 34 22 33 ?? 24    35 11 41 34 31 ??    23 11 31 34 14    44 42 35 21 51 11",
+    "settings": {},
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 172,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "ТАЙНАЯ СВЯЗЬ РЕШАЕТ ИСХОД ВОЙНЫ",
+    "ciphertext": "43 11 24 33 11 11    42 13 11 23 ??    41 21 54 11 21 43    24 42 51 34 15    13 34 24 33 ??",
+    "settings": {},
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 173,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "КРИПТОГРАФЫ ГЕРОИ НЕВИДИМОГО ФРОНТА",
+    "ciphertext": "25 41 24 35 43 34 14 41 11 45 ??    14 21 41 34 24    33 21 13 24 15 24 32 34 14 34    45 41 34 33 43 11",
+    "settings": {},
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 174,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "СЕКРЕТНАЯ ИНФОРМАЦИЯ ЦЕННЕЕ ЗОЛОТА",
+    "ciphertext": "42 21 25 41 21 43 33 11 11    24 33 45 34 41 32 11 52 24 11    52 21 33 33 21 21    23 34 31 34 43 11",
+    "settings": {},
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 175,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "ВЗЛОМ ШИФРА ЭТО ИСКУССТВО",
+    "ciphertext": "13 23 31 34 32    54 24 45 41 11    21 43 34    24 42 25 44 42 42 43 13 34",
+    "settings": {},
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 176,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "МАТЕМАТИКА ОСНОВА КРИПТОГРАФИИ",
+    "ciphertext": "32 11 43 21 32 11 43 24 25 11    34 42 33 34 13 11    25 41 24 35 43 34 14 41 11 45 24 24",
+    "settings": {},
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 177,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "КВАНТОВЫЕ КОМПЬЮТЕРЫ УГРОЗА ШИФРАМ",
+    "ciphertext": "25 13 11 33 43 34 13 ?? 21    25 34 32 35 ?? 44 43 21 41 ??    44 14 41 34 23 11    54 24 45 41 11 32",
+    "settings": {},
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 178,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "ИСТОРИЯ ШИФРОВ ЭТО ИСТОРИЯ ВОЙН",
+    "ciphertext": "24 42 43 34 41 24 11    54 24 45 41 34 13    21 43 34    24 42 43 34 41 24 11    13 34 24 33",
+    "settings": {},
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 179,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "ЗАЩИТА ИНФОРМАЦИИ ЭТО ЗАЩИТА СВОБОДЫ",
+    "ciphertext": "23 11 55 24 43 11    24 33 45 34 41 32 11 52 24 24    21 43 34    23 11 55 24 43 11    42 13 34 12 34 15 ??",
+    "settings": {},
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 180,
+    "cipher": "polybius",
+    "level": 3,
+    "plaintext": "НАСТОЯЩАЯ ТАЙНА НЕВИДИМА",
+    "ciphertext": "33 11 42 43 34 11 55 11 11    43 11 24 33 11    33 21 13 24 15 24 32 11",
+    "settings": {},
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 181,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "ПРИВЕТ",
+    "ciphertext": "ЪЬЖЩПЮ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 182,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "ШИФР",
+    "ciphertext": "ГФТЗ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 183,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "ТАЙНА",
+    "ciphertext": "ЭЛЗЕК",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 184,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "КЛЮЧ",
+    "ciphertext": "ХЧЬО",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 185,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "КОД",
+    "ciphertext": "ХЪВ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 186,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "ЩИТ",
+    "ciphertext": "ДФР",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 187,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "МЕЧ",
+    "ciphertext": "ЧРХ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 188,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "СВЕТ",
+    "ciphertext": "ЬНГЙ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 189,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "ТЬМА",
+    "ciphertext": "ЭЗКЧ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 190,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "ЗНАК",
+    "ciphertext": "ТЩЮВ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 191,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "ВЕТЕР",
+    "ciphertext": "МРРЬЫ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 192,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "ГОЛОС",
+    "ciphertext": "НЪЙЁЬ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 193,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "СТЕНА",
+    "ciphertext": "ЬЮГЕК",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 194,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "МОСТ",
+    "ciphertext": "ЧЪПЙ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 195,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "ЗАМОК",
+    "ciphertext": "ТЛКЁХ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 196,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "СЛЕД",
+    "ciphertext": "ЬЧГЫ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 197,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "ПУТЬ",
+    "ciphertext": "ЪЯРУ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 198,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "ДОЖДЬ",
+    "ciphertext": "ОЪЕЫЖ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 199,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "ЗВУК",
+    "ciphertext": "ТНСВ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 200,
+    "cipher": "vigenere",
+    "level": 1,
+    "plaintext": "МАЯК",
+    "ciphertext": "ЧЛЭВ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 201,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "СЕКРЕТНЫЙ КОД",
+    "ciphertext": "ГЙХБЙЕЯАФ ЫУЦ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 202,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "ТАЙНОЕ ПОСЛАНИЕ",
+    "ciphertext": "ДЕФЮУЧ БУЬЬЕАЪЙ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 203,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "ШИФР ЦЕЗАРЯ",
+    "ciphertext": "ЙНЯБ ЫЧЩЕЫП",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 204,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "ВЗЛОМ ШИФРА",
+    "ciphertext": "УМЦЯС КЪЩЫР",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 205,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "ЗАЩИТА ДАННЫХ",
+    "ciphertext": "ЩЕДЩЧТ ХЕШЮАЗ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 206,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "КЛЮЧ ШИФРОВАНИЯ",
+    "ciphertext": "ЬРИЗ ЭЫЁХЩТЕАЪД",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 207,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "ТАЙНАЯ ОПЕРАЦИЯ",
+    "ciphertext": "ДЕФЮЕС АФПБЕИЪД",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 208,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "СЕКРЕТНАЯ МИССИЯ",
+    "ciphertext": "ГЙХБЙЕЯЕЙ ЭНДГНЙ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 209,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "КОДОВОЕ СЛОВО",
+    "ciphertext": "ЬУОЯЖБЦ ЦЦЯЖБ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 210,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "АГЕНТ ПОД ПРИКРЫТИЕМ",
+    "ciphertext": "СЗПЮЧ ВАИ ЪБНЭВАЭЩЙЯ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 211,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "ШИФРОВАННЫЙ КАНАЛ",
+    "ciphertext": "ЙНЯБУФСТШЛО ЭСТКЬ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 212,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "ТАЙНЫЙ АГЕНТ",
+    "ciphertext": "ДЕФЮАЬ СЗПЮЧ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 213,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "СЕКРЕТНАЯ КОМНАТА",
+    "ciphertext": "ГЙХБЙЕЯЕЙ ЫУЯЯЕЭР",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 214,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "ЗАШИФРОВАННЫЙ ТЕКСТ",
+    "ciphertext": "ЩЕГЩЩГАЖКЮТНЫ ЧПЫЦЕ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 215,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "КРИПТОГРАФИЧЕСКИЙ КЛЮЧ",
+    "ciphertext": "ЬХУАЧБФХКЕНЙЦЦХЩО ЭЭГВ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 216,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "ТАЙНАЯ ПЕРЕПИСКА",
+    "ciphertext": "ДЕФЮЕС БЙЫХФЫГПК",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 217,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "СЕКРЕТНЫЙ АРХИВ",
+    "ciphertext": "ГЙХБЙЕЯАФ РХЗЪЖ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 218,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "ШИФРОВАЛЬНАЯ МАШИНА",
+    "ciphertext": "ЙНЯБУФСРЖЮЕС ЮЕГЩТТ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 219,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "ТАЙНЫЙ ШИФР",
+    "ciphertext": "ДЕФЮАЬ ЙНЯБ",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 220,
+    "cipher": "vigenere",
+    "level": 2,
+    "plaintext": "КРИПТОАНАЛИТИК",
+    "ciphertext": "ЬХУАЧБСТКЬНЕЪП",
+    "settings": {
+      "key": "СЕКРЕТ"
+    },
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 221,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "ПРИШЁЛ УВИДЕЛ ПОБЕДИЛ",
+    "ciphertext": "ПУНЁШЛ ЦЖЦЦЕО ФЬУЕЖНЩ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 222,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "ЗНАНИЕ ЭТО СИЛА",
+    "ciphertext": "ЗРЕЫЫЕ АЧЬ ДИОЕ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 223,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "ИНФОРМАЦИЯ ПРАВИТ МИРОМ",
+    "ciphertext": "ИРЩЬГМГЫЦС ПУЕПЫТ ПНЮБМ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 224,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "ШИФРЫ МЕНЯЮТ ИСТОРИЮ",
+    "ciphertext": "ШЛЩЮН МЗТМРТ ЛЦАБРЛГ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 225,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "ТАЙНЫ ДОЛЖНЫ ОСТАВАТЬСЯ ТАЙНАМИ",
+    "ciphertext": "ТГОЫН ДСРФАЫ СЦАТВГЧЙДЯ ХЕЧААПН",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 226,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "КРИПТОГРАФИЯ НАУКА О СЕКРЕТАХ",
+    "ciphertext": "КУНЭЕОЁХНЖИВ ТНЁКГ У ЯЧКУЙАТХ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 227,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "КАЖДЫЙ ШИФР МОЖНО ВЗЛОМАТЬ",
+    "ciphertext": "КГЛСНЙ ЫНВГ МСЛЫБ ВКРЬЯАХБ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 228,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "БЕЗОПАСНОСТЬ ПРЕВЫШЕ ВСЕГО",
+    "ciphertext": "БЗМЬВАФТЬДТЯ ФЮЧВЮЭТ ФСЗЗЬ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 229,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "ДОВЕРЯЙ НО ПРОВЕРЯЙ",
+    "ciphertext": "ДСЖТГЯМ ТЬ ВРСЖТГЯМ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 230,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "ШИФРОВАНИЕ СПАСАЕТ ЖИЗНИ",
+    "ciphertext": "ШЛЩЮБВГТЦЧ СТЕЯТЕХ ЛЦЪНЛ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 231,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "СЛОЖНЫЙ ПАРОЛЬ ЗАЛОГ УСПЕХА",
+    "ciphertext": "СОУФАЫМ ФНГООБ ХТЛСЗ БДПЗЪН",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 232,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "ТАЙНАЯ СВЯЗЬ РЕШАЕТ ИСХОД ВОЙНЫ",
+    "ciphertext": "ТГОЫТЯ ФЖМЪЬ УЙЁТЕХ НЯЗОЖ ЖЬЬНЮ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 233,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "КРИПТОГРАФЫ ГЕРОИ НЕВИДИМОГО ФРОНТА",
+    "ciphertext": "КУНЭЕОЁХНЖЫ ЁЙЮБИ РЙПЫДЛСЬХО ЧХЬАТГ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 234,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "СЕКРЕТНАЯ ИНФОРМАЦИЯ ЦЕННЕЕ ЗОЛОТА",
+    "ciphertext": "СЗПЮЧТРЕМ ЫНЧУЮЯАЩНМ ИЕРТТЧ ЗСРЬЕА",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 235,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "ВЗЛОМ ШИФРА ЭТО ИСКУССТВО",
+    "ciphertext": "ВКРЬЯ ШЛЩЮТ ЭХУ ЦДКЦЦЯЕВС",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 236,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "МАТЕМАТИКА ОСНОВА КРИПТОГРАФИИ",
+    "ciphertext": "МГЧТЯАХНШТ ОФТЬФА НХЦВТСЗЮТФЛН",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 237,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "КВАНТОВЫЕ КОМПЬЮТЕРЫ УГРОЗА ШИФРАМ",
+    "ciphertext": "КЕЕЫЕОЕАТ ЭОПФЙРТЗХИ ЁГУУХТ ШЛЩЮТМ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 238,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "ИСТОРИЯ ШИФРОВ ЭТО ИСТОРИЯ ВОЙН",
+    "ciphertext": "ИФЧЬГИВ ЭЦЖРСЖ КЕО ЛЦАБРЛД ПБЙР",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 239,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "ЗАЩИТА ИНФОРМАЦИИ ЭТО ЗАЩИТА СВОБОДЫ",
+    "ciphertext": "ЗГЮЦЕА ЛТВБРПЕДЫИ АЧЬ ЪАЬНАТ СЕУОБДЮ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 240,
+    "cipher": "vigenere",
+    "level": 3,
+    "plaintext": "НАСТОЯЩАЯ ТАЙНА НЕВИДИМА",
+    "ciphertext": "НГЦАБЯЬЕМ ЕАМТН АЕЕНСЫМГ",
+    "settings": {
+      "key": "АГЕНТ"
+    },
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 241,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "ПРИВЕТ",
+    "ciphertext": ".--. .-. .. .-- . -",
+    "settings": {},
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 242,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "ШИФР",
+    "ciphertext": "---- .. ..-. .-.",
+    "settings": {},
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 243,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "ТАЙНА",
+    "ciphertext": "- .- .--- -. .-",
+    "settings": {},
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 244,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "КЛЮЧ",
+    "ciphertext": "-.- .-.. ..-- ---.",
+    "settings": {},
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 245,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "КОД",
+    "ciphertext": "-.- --- -..",
+    "settings": {},
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 246,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "ЩИТ",
+    "ciphertext": "--.- .. -",
+    "settings": {},
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 247,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "МЕЧ",
+    "ciphertext": "-- . ---.",
+    "settings": {},
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 248,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "СВЕТ",
+    "ciphertext": "... .-- . -",
+    "settings": {},
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 249,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "ТЬМА",
+    "ciphertext": "- -..- -- .-",
+    "settings": {},
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 250,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "ЗНАК",
+    "ciphertext": "--.. -. .- -.-",
+    "settings": {},
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 251,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "ВЕТЕР",
+    "ciphertext": ".-- . - . .-.",
+    "settings": {},
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 252,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "ГОЛОС",
+    "ciphertext": "--. --- .-.. --- ...",
+    "settings": {},
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 253,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "СТЕНА",
+    "ciphertext": "... - . -. .-",
+    "settings": {},
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 254,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "МОСТ",
+    "ciphertext": "-- --- ... -",
+    "settings": {},
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 255,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "ЗАМОК",
+    "ciphertext": "--.. .- -- --- -.-",
+    "settings": {},
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 256,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "СЛЕД",
+    "ciphertext": "... .-.. . -..",
+    "settings": {},
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 257,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "ПУТЬ",
+    "ciphertext": ".--. ..- - -..-",
+    "settings": {},
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 258,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "ДОЖДЬ",
+    "ciphertext": "-.. --- ...- -.. -..-",
+    "settings": {},
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 259,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "ЗВУК",
+    "ciphertext": "--.. .-- ..- -.-",
+    "settings": {},
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 260,
+    "cipher": "morse",
+    "level": 1,
+    "plaintext": "МАЯК",
+    "ciphertext": "-- .- .-.- -.-",
+    "settings": {},
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 261,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "СЕКРЕТНЫЙ КОД",
+    "ciphertext": "... . -.- .-. . - -. -.-- .--- / -.- --- -..",
+    "settings": {},
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 262,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "ТАЙНОЕ ПОСЛАНИЕ",
+    "ciphertext": "- .- .--- -. --- . / .--. --- ... .-.. .- -. .. .",
+    "settings": {},
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 263,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "ШИФР ЦЕЗАРЯ",
+    "ciphertext": "---- .. ..-. .-. / -.-. . --.. .- .-. .-.-",
+    "settings": {},
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 264,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "ВЗЛОМ ШИФРА",
+    "ciphertext": ".-- --.. .-.. --- -- / ---- .. ..-. .-. .-",
+    "settings": {},
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 265,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "ЗАЩИТА ДАННЫХ",
+    "ciphertext": "--.. .- --.- .. - .- / -.. .- -. -. -.-- ....",
+    "settings": {},
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 266,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "КЛЮЧ ШИФРОВАНИЯ",
+    "ciphertext": "-.- .-.. ..-- ---. / ---- .. ..-. .-. --- .-- .- -. .. .-.-",
+    "settings": {},
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 267,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "ТАЙНАЯ ОПЕРАЦИЯ",
+    "ciphertext": "- .- .--- -. .- .-.- / --- .--. . .-. .- -.-. .. .-.-",
+    "settings": {},
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 268,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "СЕКРЕТНАЯ МИССИЯ",
+    "ciphertext": "... . -.- .-. . - -. .- .-.- / -- .. ... ... .. .-.-",
+    "settings": {},
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 269,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "КОДОВОЕ СЛОВО",
+    "ciphertext": "-.- --- -.. --- .-- --- . / ... .-.. --- .-- ---",
+    "settings": {},
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 270,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "АГЕНТ ПОД ПРИКРЫТИЕМ",
+    "ciphertext": ".- --. . -. - / .--. --- -.. / .--. .-. .. -.- .-. -.-- - .. . --",
+    "settings": {},
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 271,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "ШИФРОВАННЫЙ КАНАЛ",
+    "ciphertext": "---- .. ..-. .-. --- .-- .- -. -. -.-- .--- / -.- .- -. .- .-..",
+    "settings": {},
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 272,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "ТАЙНЫЙ АГЕНТ",
+    "ciphertext": "- .- .--- -. -.-- .--- / .- --. . -. -",
+    "settings": {},
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 273,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "СЕКРЕТНАЯ КОМНАТА",
+    "ciphertext": "... . -.- .-. . - -. .- .-.- / -.- --- -- -. .- - .-",
+    "settings": {},
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 274,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "ЗАШИФРОВАННЫЙ ТЕКСТ",
+    "ciphertext": "--.. .- ---- .. ..-. .-. --- .-- .- -. -. -.-- .--- / - . -.- ... -",
+    "settings": {},
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 275,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "КРИПТОГРАФИЧЕСКИЙ КЛЮЧ",
+    "ciphertext": "-.- .-. .. .--. - --- --. .-. .- ..-. .. ---. . ... -.- .. .--- / -.- .-.. ..-- ---.",
+    "settings": {},
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 276,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "ТАЙНАЯ ПЕРЕПИСКА",
+    "ciphertext": "- .- .--- -. .- .-.- / .--. . .-. . .--. .. ... -.- .-",
+    "settings": {},
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 277,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "СЕКРЕТНЫЙ АРХИВ",
+    "ciphertext": "... . -.- .-. . - -. -.-- .--- / .- .-. .... .. .--",
+    "settings": {},
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 278,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "ШИФРОВАЛЬНАЯ МАШИНА",
+    "ciphertext": "---- .. ..-. .-. --- .-- .- .-.. -..- -. .- .-.- / -- .- ---- .. -. .-",
+    "settings": {},
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 279,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "ТАЙНЫЙ ШИФР",
+    "ciphertext": "- .- .--- -. -.-- .--- / ---- .. ..-. .-.",
+    "settings": {},
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 280,
+    "cipher": "morse",
+    "level": 2,
+    "plaintext": "КРИПТОАНАЛИТИК",
+    "ciphertext": "-.- .-. .. .--. - --- .- -. .- .-.. .. - .. -.-",
+    "settings": {},
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 281,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "ПРИШЁЛ УВИДЕЛ ПОБЕДИЛ",
+    "ciphertext": ".--. .-. .. ---- . .-.. / ..- .-- .. -.. . .-.. / .--. --- -... . -.. .. .-..",
+    "settings": {},
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 282,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "ЗНАНИЕ ЭТО СИЛА",
+    "ciphertext": "--.. -. .- -. .. . / ..-.. - --- / ... .. .-.. .-",
+    "settings": {},
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 283,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "ИНФОРМАЦИЯ ПРАВИТ МИРОМ",
+    "ciphertext": ".. -. ..-. --- .-. -- .- -.-. .. .-.- / .--. .-. .- .-- .. - / -- .. .-. --- --",
+    "settings": {},
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 284,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "ШИФРЫ МЕНЯЮТ ИСТОРИЮ",
+    "ciphertext": "---- .. ..-. .-. -.-- / -- . -. .-.- ..-- - / .. ... - --- .-. .. ..--",
+    "settings": {},
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 285,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "ТАЙНЫ ДОЛЖНЫ ОСТАВАТЬСЯ ТАЙНАМИ",
+    "ciphertext": "- .- .--- -. -.-- / -.. --- .-.. ...- -. -.-- / --- ... - .- .-- .- - -..- ... .-.- / - .- .--- -. .- -- ..",
+    "settings": {},
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 286,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "КРИПТОГРАФИЯ НАУКА О СЕКРЕТАХ",
+    "ciphertext": "-.- .-. .. .--. - --- --. .-. .- ..-. .. .-.- / -. .- ..- -.- .- / --- / ... . -.- .-. . - .- ....",
+    "settings": {},
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 287,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "КАЖДЫЙ ШИФР МОЖНО ВЗЛОМАТЬ",
+    "ciphertext": "-.- .- ...- -.. -.-- .--- / ---- .. ..-. .-. / -- --- ...- -. --- / .-- --.. .-.. --- -- .- - -..-",
+    "settings": {},
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 288,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "БЕЗОПАСНОСТЬ ПРЕВЫШЕ ВСЕГО",
+    "ciphertext": "-... . --.. --- .--. .- ... -. --- ... - -..- / .--. .-. . .-- -.-- ---- . / .-- ... . --. ---",
+    "settings": {},
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 289,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "ДОВЕРЯЙ НО ПРОВЕРЯЙ",
+    "ciphertext": "-.. --- .-- . .-. .-.- .--- / -. --- / .--. .-. --- .-- . .-. .-.- .---",
+    "settings": {},
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 290,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "ШИФРОВАНИЕ СПАСАЕТ ЖИЗНИ",
+    "ciphertext": "---- .. ..-. .-. --- .-- .- -. .. . / ... .--. .- ... .- . - / ...- .. --.. -. ..",
+    "settings": {},
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 291,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "СЛОЖНЫЙ ПАРОЛЬ ЗАЛОГ УСПЕХА",
+    "ciphertext": "... .-.. --- ...- -. -.-- .--- / .--. .- .-. --- .-.. -..- / --.. .- .-.. --- --. / ..- ... .--. . .... .-",
+    "settings": {},
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 292,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "ТАЙНАЯ СВЯЗЬ РЕШАЕТ ИСХОД ВОЙНЫ",
+    "ciphertext": "- .- .--- -. .- .-.- / ... .-- .-.- --.. -..- / .-. . ---- .- . - / .. ... .... --- -.. / .-- --- .--- -. -.--",
+    "settings": {},
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 293,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "КРИПТОГРАФЫ ГЕРОИ НЕВИДИМОГО ФРОНТА",
+    "ciphertext": "-.- .-. .. .--. - --- --. .-. .- ..-. -.-- / --. . .-. --- .. / -. . .-- .. -.. .. -- --- --. --- / ..-. .-. --- -. - .-",
+    "settings": {},
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 294,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "СЕКРЕТНАЯ ИНФОРМАЦИЯ ЦЕННЕЕ ЗОЛОТА",
+    "ciphertext": "... . -.- .-. . - -. .- .-.- / .. -. ..-. --- .-. -- .- -.-. .. .-.- / -.-. . -. -. . . / --.. --- .-.. --- - .-",
+    "settings": {},
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 295,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "ВЗЛОМ ШИФРА ЭТО ИСКУССТВО",
+    "ciphertext": ".-- --.. .-.. --- -- / ---- .. ..-. .-. .- / ..-.. - --- / .. ... -.- ..- ... ... - .-- ---",
+    "settings": {},
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 296,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "МАТЕМАТИКА ОСНОВА КРИПТОГРАФИИ",
+    "ciphertext": "-- .- - . -- .- - .. -.- .- / --- ... -. --- .-- .- / -.- .-. .. .--. - --- --. .-. .- ..-. .. ..",
+    "settings": {},
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 297,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "КВАНТОВЫЕ КОМПЬЮТЕРЫ УГРОЗА ШИФРАМ",
+    "ciphertext": "-.- .-- .- -. - --- .-- -.-- . / -.- --- -- .--. -..- ..-- - . .-. -.-- / ..- --. .-. --- --.. .- / ---- .. ..-. .-. .- --",
+    "settings": {},
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 298,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "ИСТОРИЯ ШИФРОВ ЭТО ИСТОРИЯ ВОЙН",
+    "ciphertext": ".. ... - --- .-. .. .-.- / ---- .. ..-. .-. --- .-- / ..-.. - --- / .. ... - --- .-. .. .-.- / .-- --- .--- -.",
+    "settings": {},
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 299,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "ЗАЩИТА ИНФОРМАЦИИ ЭТО ЗАЩИТА СВОБОДЫ",
+    "ciphertext": "--.. .- --.- .. - .- / .. -. ..-. --- .-. -- .- -.-. .. .. / ..-.. - --- / --.. .- --.- .. - .- / ... .-- --- -... --- -.. -.--",
+    "settings": {},
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 300,
+    "cipher": "morse",
+    "level": 3,
+    "plaintext": "НАСТОЯЩАЯ ТАЙНА НЕВИДИМА",
+    "ciphertext": "-. .- ... - --- .-.- --.- .- .-.- / - .- .--- -. .- / -. . .-- .. -.. .. -- .-",
+    "settings": {},
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 301,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "ПРИВЕТ",
+    "ciphertext": "ТИШГЛЪ",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 302,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "ШИФР",
+    "ciphertext": "ИФРА",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 303,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "ТАЙНА",
+    "ciphertext": "УРКЗБУ",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 304,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "КЛЮЧ",
+    "ciphertext": "ЛМИЮ",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 305,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "КОД",
+    "ciphertext": "ЗСЖС",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 306,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "ЩИТ",
+    "ciphertext": "ЧФУО",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 307,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "МЕЧ",
+    "ciphertext": "ЛЁЬП",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 308,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "СВЕТ",
+    "ciphertext": "ОДЛЪ",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 309,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "ТЬМА",
+    "ciphertext": "ХЪУЁ",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 310,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "ЗНАК",
+    "ciphertext": "ЙЗФМ",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 311,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "ВЕТЕР",
+    "ciphertext": "ГЁЪЛБТ",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 312,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "ГОЛОС",
+    "ciphertext": "ВПЗТТО",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 313,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "СТЕНА",
+    "ciphertext": "ТУЖЛБУ",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 314,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "МОСТ",
+    "ciphertext": "ЗУТУ",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 315,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "ЗАМОК",
+    "ciphertext": "МШЗУНС",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 316,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "СЛЕД",
+    "ciphertext": "ТКЁЕ",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Короткое слово русского языка."
+  },
+  {
+    "id": 317,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "ПУТЬ",
+    "ciphertext": "СХХЪ",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Базовое слово для тренировки."
+  },
+  {
+    "id": 318,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "ДОЖДЬ",
+    "ciphertext": "ВСВЕ!Ь",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Простое слово, чтобы размяться."
+  },
+  {
+    "id": 319,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "ЗВУК",
+    "ciphertext": "ОЗСМ",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Одно из частотных слов в криптографии."
+  },
+  {
+    "id": 320,
+    "cipher": "playfair",
+    "level": 1,
+    "plaintext": "МАЯК",
+    "ciphertext": "УЁФС",
+    "settings": {
+      "key": "ШИФР"
+    },
+    "history": "Слово, которое часто шифруют новички."
+  },
+  {
+    "id": 321,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "СЕКРЕТНЫЙ КОД",
+    "ciphertext": "ТДЛПМЩОЪЗЮЙЖ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 322,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "ТАЙНОЕ ПОСЛАНИЕ",
+    "ciphertext": "УЧМОМЖФЗРЮЁУМГ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 323,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "ШИФР ЦЕЗАРЯ",
+    "ciphertext": "ЦЙПСЩГНКСЭ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 324,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "ВЗЛОМ ШИФРА",
+    "ciphertext": "ЗПБИЙЩОРУЛ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 325,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "ЗАЩИТА ДАННЫХ",
+    "ciphertext": "НКЦМУЧЁЮЗЪОЪЦЦ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 326,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "КЛЮЧ ШИФРОВАНИЯ",
+    "ciphertext": "ЛЮЧАЦЙПСЗЖЁУЙЭ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 327,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "ТАЙНАЯ ОПЕРАЦИЯ",
+    "ciphertext": "УЧМОЮ,ЗФГТЛЪЙЭ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 328,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "СЕКРЕТНАЯ МИССИЯ",
+    "ciphertext": "ТДЛПМЩУЁ.ЙЙРРЙЬШ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 329,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "КОДОВОЕ СЛОВО",
+    "ciphertext": "БЗЖЙЖЗДТБИЖЗ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 330,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "АГЕНТ ПОД ПРИКРЫТИЕМ",
+    "ciphertext": "ЛЁЁМУРЙЖРСЗЛФЦРММТ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 331,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "ШИФРОВАННЫЙ КАНАЛ",
+    "ciphertext": "ЦЙПСЗЖЁУОЪЗЮЁУБЮ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 332,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "ТАЙНЫЙ АГЕНТ",
+    "ciphertext": "УЧМОШОЛЁЁМПЩ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 333,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "СЕКРЕТНАЯ КОМНАТА",
+    "ciphertext": "ТДЛПМЩУЁЬЮЗНУЁУЧ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 334,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "ЗАШИФРОВАННЫЙ ТЕКСТ",
+    "ciphertext": "НКЦЙПСЗЖЁУОЪМСВЧТУ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 335,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "КРИПТОГРАФИЧЕСКИЙ КЛЮЧ",
+    "ciphertext": "ЛПЗРФМИЦБУМЛДТЛЗЗЮЮЧКЩ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 336,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "ТАЙНАЯ ПЕРЕПИСКА",
+    "ciphertext": "УЧМОЮ,ТВТГРЗПЮКЪ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Фраза, связанная с миром шифрования."
+  },
+  {
+    "id": 337,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "СЕКРЕТНЫЙ АРХИВ",
+    "ciphertext": "ТДЛПМЩОЪНЮПЦЗГ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Термин из области криптографии."
+  },
+  {
+    "id": 338,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "ШИФРОВАЛЬНАЯ МАШИНА",
+    "ciphertext": "ЦЙПСЗЖБЮ,ЗЮ,НЧЦЙУЁ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Выражение, популярное среди криптографов."
+  },
+  {
+    "id": 339,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "ТАЙНЫЙ ШИФР",
+    "ciphertext": "УЧМОШОЦЙПС",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Фраза-пароль для доступа к секретам."
+  },
+  {
+    "id": 340,
+    "cipher": "playfair",
+    "level": 2,
+    "plaintext": "КРИПТОАНАЛИТИК",
+    "ciphertext": "ЛПЗРФМЁУБЮМРЗЛ",
+    "settings": {
+      "key": "КЛЮЧ"
+    },
+    "history": "Кодовое выражение агентов."
+  },
+  {
+    "id": 341,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "ПРИШЁЛ УВИДЕЛ ПОБЕДИЛ",
+    "ciphertext": "ИЦКЧЕМЦЙКГЛУИПЙЖГКОУ",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 342,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "ЗНАНИЕ ЭТО СИЛА",
+    "ciphertext": "ЁВЙБЛГТГКХКМБС",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 343,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "ИНФОРМАЦИЯ ПРАВИТ МИРОМ",
+    "ciphertext": "МТХМФИВСЛЭИЦЙТРГОКХИОФ",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 344,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "ШИФРЫ МЕНЯЮТ ИСТОРИЮ",
+    "ciphertext": "ЧКХСЪОЁЙ.ЯГРРАИХКЭ",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 345,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "ТАЙНЫ ДОЛЖНЫ ОСТАВАТЬСЯ ТАЙНАМИ",
+    "ciphertext": "АЙНБШЖПМЁБ,ХРАЙТЙАШЦЭЙЙНБЙОК",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 346,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "КРИПТОГРАФИЯ НАУКА О СЕКРЕТАХ",
+    "ciphertext": "ИСКИБИИЧНСЛЭБЙСЛБКУДИСГЙБС",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 347,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "КАЖДЫЙ ШИФР МОЖНО ВЗЛОМАТЬ",
+    "ciphertext": "СДЗЕЩБЧКХСОПЁБПБЕППОЙАЫЦ",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 348,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "БЕЗОПАСНОСТЬ ПРЕВЫШЕ ВСЕГО",
+    "ciphertext": "ЙЖЖПКВФАКХВЧИЦЗЙЬЩЗЙУДЖИ",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 349,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "ДОВЕРЯЙ НО ПРОВЕРЯЙ",
+    "ciphertext": "ЖКЙЗУЭНБПИХИЙЗУЭБУ",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 350,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "ШИФРОВАНИЕ СПАСАЕТ ЖИЗНИ",
+    "ciphertext": "ЧКХСПБЙБЛГЦКДШЙДБГПГТМ",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 351,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "СЛОЖНЫЙ ПАРОЛЬ ЗАЛОГ УСПЕХА",
+    "ciphertext": "УКХОБЪВЛТСПМ!ПЙКИЖФУЛЗСБ",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 352,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "ТАЙНАЯ СВЯЗЬ РЕШАЕТ ИСХОД ВОЙНЫ",
+    "ciphertext": "АЙНБЙЮЦА!ЕЧЦДЩЙДГРУЦКЖБПНБ,Ы",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 353,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "КРИПТОГРАФЫ ГЕРОИ НЕВИДИМОГО ФРОНТА",
+    "ciphertext": "ИСКИБИИЧНСЧЖГУПКЙЁТПГКОПЖИХСМБАЙ",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 354,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "СЕКРЕТНАЯ ИНФОРМАЦИЯ ЦЕННЕЕ ЗОЛОТА",
+    "ciphertext": "УДИСГЙБЙЭЛЁЪИХКНРП!УЁЙЙЁЁГПМИББС",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 355,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "ВЗЛОМ ШИФРА ЭТО ИСКУССТВО",
+    "ciphertext": "ЗПМПКЪМРСТТГПКШСФУРАБП",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Афоризм о безопасности информации."
+  },
+  {
+    "id": 356,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "МАТЕМАТИКА ОСНОВА КРИПТОГРАФИИ",
+    "ciphertext": "КНЙГКНГРСДКХБМТЙИСКИБИИЧНСОРОР",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Известное высказывание о шифрах."
+  },
+  {
+    "id": 357,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "КВАНТОВЫЕ КОМПЬЮТЕРЫ УГРОЗА ШИФРАМ",
+    "ciphertext": "ПАЙББИБЬДЛПОЦ!ЭАГУЩХИЧПЖДЮМРСТОФ",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Цитата великого криптографа."
+  },
+  {
+    "id": 358,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "ИСТОРИЯ ШИФРОВ ЭТО ИСТОРИЯ ВОЙН",
+    "ciphertext": "КРБИЧРЮЩМРХИТ!БИКРБИЧР!ЙЛББФ",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Мудрость, скрытая за шифром."
+  },
+  {
+    "id": 359,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "ЗАЩИТА ИНФОРМАЦИИ ЭТО ЗАЩИТА СВОБОДЫ",
+    "ciphertext": "ДВЧЛАЙМТХМФИВСОРРТБИДВЧЛАЙЦАХЖКЖ,Ы",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Историческая фраза о тайнах."
+  },
+  {
+    "id": 360,
+    "cipher": "playfair",
+    "level": 3,
+    "plaintext": "НАСТОЯЩАЯ ТАЙНА НЕВИДИМА",
+    "ciphertext": "БЙРАЛ,ШЙЭЙЙНБЙЙЁТПГККН",
+    "settings": {
+      "key": "ТАЙНА"
+    },
+    "history": "Афоризм о безопасности информации."
+  }
+]
