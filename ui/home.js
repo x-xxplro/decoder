@@ -57,7 +57,7 @@ function showCipherInfo(cipherId) {
       portrait: 'https://media.sciencephoto.com/c0/26/46/87/c0264687-800px-wm.jpg'
     }
   };
-  
+   
   var data = creators[cipherId];
   if (!data) return;
   
