@@ -1737,30 +1737,43 @@ h2 {
 .detail-header h2 {
   font-size: clamp(1.2rem, 3vw, 1.8rem);
 }
+/* ==================== ПОЛНАЯ СВЕТЛАЯ ТЕМА ==================== */
 
 body.light-theme {
-  background-color: #F0F0E8;
+  background-color: #F5F5F0;
   background-image: 
-    linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px);
   color: #1a3a1a;
 }
 
+/* Панели */
 body.light-theme .panel {
   background: #FFFFFF;
+  border-color: #d0d0c8;
+}
+
+body.light-theme .panel:hover {
+  border-color: #1a6b1a;
+}
+
+/* Текст */
+body.light-theme .cipher-text {
+  color: #1a6b1a !important;
+  text-shadow: none !important;
+  background: #fafaf5;
   border-color: #ccc;
 }
 
-body.light-theme .cipher-text {
-  color: #1a6b1a;
-  text-shadow: none;
-  background: #f5f5f0;
+body.light-theme .label {
+  color: #666;
 }
 
+/* Кнопки */
 body.light-theme button {
   color: #1a6b1a;
   border-color: #1a6b1a;
-  background: #f9f9f5;
+  background: transparent;
 }
 
 body.light-theme button:hover {
@@ -1768,61 +1781,381 @@ body.light-theme button:hover {
   color: #fff;
 }
 
-body.light-theme input[type="text"] {
-  color: #1a3a1a;
-  border-color: #999;
+body.light-theme button.primary {
+  color: #1a6b1a;
+  border-color: #1a6b1a;
 }
 
+body.light-theme button.primary:hover {
+  background: #1a6b1a;
+  color: #fff;
+}
+
+body.light-theme .nav-button {
+  color: #1a6b1a;
+  border-color: #1a6b1a;
+  background: #fff;
+}
+
+body.light-theme .nav-button:hover {
+  background: #1a6b1a;
+  color: #fff;
+}
+
+/* Поля ввода */
+body.light-theme input[type="text"],
+body.light-theme input[type="number"] {
+  color: #1a3a1a;
+  border-bottom-color: #999;
+  background: #fff;
+}
+
+body.light-theme input[type="text"]:focus,
+body.light-theme input[type="number"]:focus {
+  border-bottom-color: #1a6b1a;
+}
+
+/* Заголовки */
+body.light-theme .main-title,
+body.light-theme h1, 
+body.light-theme h2,
+body.light-theme h3 {
+  color: #1a6b1a !important;
+  text-shadow: none !important;
+}
+
+body.light-theme .glitch-text {
+  text-shadow: none !important;
+  color: #1a6b1a !important;
+}
+
+body.light-theme .glitch-text::before,
+body.light-theme .glitch-text::after {
+  display: none;
+}
+
+body.light-theme h1::before,
+body.light-theme h2::before {
+  color: #1a6b1a;
+}
+
+/* Карточки */
+body.light-theme .cipher-card,
+body.light-theme .level-card,
+body.light-theme .library-card,
+body.light-theme .achievement-card {
+  background: #fff;
+  border-color: #d0d0c8;
+}
+
+body.light-theme .cipher-card:hover,
+body.light-theme .level-card:hover,
+body.light-theme .library-card:hover,
+body.light-theme .achievement-card:hover {
+  border-color: #1a6b1a;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+body.light-theme .card-title,
+body.light-theme .library-card-title,
+body.light-theme .level-name {
+  color: #1a6b1a !important;
+}
+
+body.light-theme .card-description {
+  color: #666;
+}
+
+body.light-theme .card-number,
+body.light-theme .card-arrow {
+  color: #888;
+}
+
+/* Таблицы и сетки */
+body.light-theme .atbash-table,
+body.light-theme details summary {
+  background: #f5f5f0;
+  border-color: #ccc;
+}
+
+body.light-theme details[open] summary {
+  border-bottom-color: #1a6b1a;
+  color: #1a6b1a;
+}
+
+/* Таймер */
+body.light-theme .timer {
+  background: #eee;
+  color: #1a3a1a;
+}
+
+/* Индикатор попыток */
+body.light-theme .attempts-indicator {
+  color: #1a3a1a;
+}
+
+/* Статистика */
+body.light-theme .stats-inline {
+  background: #fafaf5;
+  border-color: #ccc;
+}
+
+body.light-theme .stats-cat-item {
+  color: #1a3a1a;
+}
+
+body.light-theme .percent-value {
+  color: #1a6b1a;
+  text-shadow: none;
+}
+
+body.light-theme .stat-value {
+  color: #1a6b1a;
+  text-shadow: none;
+}
+
+/* Прогресс-бар */
+body.light-theme .progress-bar-container {
+  background: #ddd;
+}
+
+/* Модальные окна */
 body.light-theme .modal-box {
   background: #fff;
   border-color: #1a6b1a;
+}
+
+body.light-theme .modal-header {
+  border-bottom-color: #ccc;
+}
+
+body.light-theme .modal-close-btn {
+  color: #1a6b1a;
+  border-color: #1a6b1a;
+}
+
+body.light-theme .modal-close-btn:hover {
+  background: #1a6b1a;
+  color: #fff;
+}
+
+body.light-theme .modal-content {
+  color: #333;
 }
 
 body.light-theme .dev-modal-content {
   background: #fff;
 }
 
-body.light-theme .main-title,
-body.light-theme h1, 
-body.light-theme h2 {
+body.light-theme .dev-modal-header {
+  border-bottom-color: #ccc;
+  color: #1a6b1a;
+}
+
+body.light-theme .dev-modal-body {
+  color: #333;
+}
+
+body.light-theme .info-label {
+  color: #666;
+}
+
+body.light-theme .info-value {
+  color: #333;
+}
+
+body.light-theme .info-value.highlight {
   color: #1a6b1a;
   text-shadow: none;
 }
 
-body.light-theme .level-card,
-body.light-theme .library-card,
-body.light-theme .achievement-card {
-  background: #fff;
-  border-color: #ccc;
-}
-
-body.light-theme .level-card:hover,
-body.light-theme .library-card:hover {
-  border-color: #1a6b1a;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-body.light-theme .glitch-text {
-  text-shadow: none;
-  color: #1a6b1a;
-}
-
-body.light-theme .timer {
-  background: #eee;
-  color: #1a3a1a;
-}
-
-body.light-theme .progress-bar-container {
+body.light-theme .info-divider {
   background: #ddd;
 }
 
-body.light-theme .stats-inline {
+body.light-theme .tech-badge {
+  color: #1a6b1a;
+  border-color: #1a6b1a;
+}
+
+body.light-theme .tech-badge:hover {
+  background: #1a6b1a;
+  color: #fff;
+}
+
+/* Детальный просмотр */
+body.light-theme .detail-overlay {
+  background: rgba(245,245,240,0.95);
+}
+
+body.light-theme .detail-content {
+  background: #fff;
+  border-color: #1a6b1a;
+}
+
+body.light-theme .detail-header {
+  border-bottom-color: #1a6b1a;
+}
+
+body.light-theme .detail-text {
+  color: #333;
+}
+
+body.light-theme .example-block {
   background: #f5f5f0;
   border-color: #ccc;
 }
 
+body.light-theme .example-value {
+  color: #1a6b1a;
+  text-shadow: none;
+}
+
+body.light-theme .example-value.highlight {
+  color: #1a6b1a;
+  text-shadow: none;
+}
+
+/* Библиотека */
+body.light-theme .library-card-preview {
+  color: #666;
+}
+
+body.light-theme .library-card:hover::after {
+  background: #1a6b1a;
+}
+
+/* Достижения */
+body.light-theme .achievement-card.unlocked {
+  border-color: rgba(26,107,26,0.3);
+  background: rgba(26,107,26,0.03);
+}
+
+body.light-theme .achievement-card.locked {
+  opacity: 0.6;
+}
+
+body.light-theme .ach-rarity {
+  color: #666;
+}
+
+body.light-theme .ach-info p {
+  color: #666;
+}
+
+body.light-theme .category-title {
+  border-bottom-color: #ccc;
+}
+
+/* Уровни */
+body.light-theme .level-stat {
+  border-bottom-color: #eee;
+}
+
+body.light-theme .level-stat-label {
+  color: #666;
+}
+
+body.light-theme .level-stat-value {
+  color: #1a6b1a;
+}
+
+body.light-theme .level-description {
+  color: #666;
+}
+
+/* Кнопка темы */
 body.light-theme #themeToggle {
   background: #1a6b1a;
   color: #fff;
-  border: 1px solid #1a6b1a;
+  border-color: #1a6b1a;
+}
+
+body.light-theme #themeToggle:hover {
+  background: #fff;
+  color: #1a6b1a;
+}
+
+/* Бегущая строка */
+body.light-theme #marquee {
+  background: #eee;
+  border-top-color: #ccc;
+}
+
+body.light-theme #marqueeText {
+  color: #1a6b1a;
+}
+
+/* Галерея */
+body.light-theme .gallery-item {
+  border-color: #ccc;
+  background: #fff;
+}
+
+body.light-theme .gallery-item:hover {
+  border-color: #1a6b1a;
+}
+
+body.light-theme .gallery-info b {
+  color: #1a6b1a;
+}
+
+/* Скроллбары */
+body.light-theme::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+body.light-theme::-webkit-scrollbar-thumb {
+  background: #1a6b1a;
+}
+
+body.light-theme * {
+  scrollbar-color: #1a6b1a #ddd;
+}
+
+/* Промпт */
+body.light-theme .prompt-symbol,
+body.light-theme .prompt {
+  color: #1a6b1a;
+}
+
+/* Подзаголовки */
+body.light-theme .subtitle {
+  color: #1a6b1a;
+}
+
+body.light-theme .line-decoration {
+  background: #1a6b1a;
+}
+
+/* Статус */
+body.light-theme .status-dot {
+  background: #1a6b1a;
+  box-shadow: 0 0 5px rgba(26,107,26,0.5);
+}
+
+body.light-theme .status-text {
+  color: #666;
+}
+
+/* Футер */
+body.light-theme .footer-line {
+  background: linear-gradient(to right, transparent, #ccc, transparent);
+}
+
+body.light-theme .footer-copyright {
+  color: #999;
+}
+
+/* Чекбоксы/детали */
+body.light-theme details {
+  border-color: #ccc;
+}
+
+body.light-theme details summary {
+  color: #666;
+}
+
+body.light-theme details summary:hover {
+  color: #1a6b1a;
 }
