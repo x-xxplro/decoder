@@ -212,8 +212,7 @@ export function renderHome() {
       <main class="cipher-grid">
         ${ciphers.map((cipher, index) => `
           <div class="cipher-card" 
-               oncontextmenu="event.preventDefault(); showCipherInfo('${cipher.id}')"
-               onclick="location.hash='#game?cipher=${cipher.id}'">
+               data-cipher="${cipher.id}"
                style="animation-delay: ${index * 0.1}s">
             <div class="card-header">
               <span class="card-number">[${String(index + 1).padStart(2, '0')}]</span>
