@@ -99,30 +99,84 @@ const icons = {
 };
 
 window.showCipherInfo = function(cipherId) {
-  const info = {
-    caesar: { name: 'Цезарь', year: 'I век до н.э.', author: 'Гай Юлий Цезарь', fact: 'Сдвиг на 3 буквы вправо. Самый известный шифр древности.' },
-    atbash: { name: 'Атбаш', year: 'VI век до н.э.', author: 'Древний Израиль', fact: 'Зеркальная замена: А↔Я. Упоминается в Книге Иеремии.' },
-    polybius: { name: 'Полибий', year: 'II век до н.э.', author: 'Полибий', fact: 'Квадрат 5×5. Передача сигналов факелами на расстоянии.' },
-    vigenere: { name: 'Виженер', year: '1553 год', author: 'Блез де Виженер', fact: 'Полиалфавитный шифр. 300 лет считался невзламываемым.' },
-    morse: { name: 'Морзе', year: '1838 год', author: 'Сэмюэл Морзе', fact: 'Точки и тире. Сигнал SOS: ... --- ... Принят в 1906 году.' },
-    playfair: { name: 'Плейфер', year: '1854 год', author: 'Чарльз Уитстон', fact: 'Биграммный шифр. Матрица 6×6. Использовался в Первой мировой.' }
+  const creators = {
+    caesar: { 
+      name: 'Гай Юлий Цезарь', 
+      years: '100–44 гг. до н.э.', 
+      fact: 'Римский император. Использовал сдвиг на 3 буквы для военной переписки.',
+      portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Caesar_%28Museum_of_Antiquities_in_Saskatchewan%29.jpg/200px-Caesar_%28Museum_of_Antiquities_in_Saskatchewan%29.jpg'
+    },
+    atbash: { 
+      name: 'Пророк Иеремия', 
+      years: 'VII–VI вв. до н.э.', 
+      fact: 'Библейский пророк. Шифр Атбаш упоминается в Книге Иеремии (51:1).',
+      portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Michelangelo_Buonarroti_-_Jeremiah.jpg/200px-Michelangelo_Buonarroti_-_Jeremiah.jpg'
+    },
+    polybius: { 
+      name: 'Полибий', 
+      years: '200–120 гг. до н.э.', 
+      fact: 'Древнегреческий историк. Создал квадрат 5×5 для передачи сигналов факелами.',
+      portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Polybius.jpg/200px-Polybius.jpg'
+    },
+    vigenere: { 
+      name: 'Блез де Виженер', 
+      years: '1523–1596', 
+      fact: 'Французский дипломат. Его шифр 300 лет считался невзламываемым.',
+      portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Blaise_de_Vigen%C3%A8re.jpg/200px-Blaise_de_Vigen%C3%A8re.jpg'
+    },
+    morse: { 
+      name: 'Сэмюэл Морзе', 
+      years: '1791–1872', 
+      fact: 'Американский изобретатель. Создал телеграфный код в 1838 году.',
+      portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Samuel_Finley_Breese_Morse_-_1840.jpg/200px-Samuel_Finley_Breese_Morse_-_1840.jpg'
+    },
+    playfair: { 
+      name: 'Чарльз Уитстон', 
+      years: '1802–1875', 
+      fact: 'Британский физик. Изобрёл биграммный шифр, названный в честь лорда Плейфера.',
+      portrait: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Charles_Wheatstone.jpg/200px-Charles_Wheatstone.jpg'
+    }
   };
   
-  const data = info[cipherId];
-  const existing = document.getElementById('cipherInfoPanel');
+  const data = creators[cipherId];
+  const existing = document.getElementById('creatorPopup');
   if (existing) existing.remove();
   
-  const panel = document.createElement('div');
-  panel.id = 'cipherInfoPanel';
-  panel.style.cssText = 'position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #111; border: 2px solid #00FF41; padding: 1rem 1.5rem; z-index: 999; max-width: 400px; text-align: center; box-shadow: 0 0 20px rgba(0,255,65,0.3); animation: fadeIn 0.3s;';
-  panel.innerHTML = `
-    <b style="color:#00FF41;">${data.name}</b><br>
-    <span style="font-size:0.8rem;color:#888;">${data.author}, ${data.year}</span><br>
-    <span style="font-size:0.75rem;color:#aaa;">${data.fact}</span>
-    <br><button onclick="this.parentElement.remove()" style="margin-top:0.5rem;font-size:0.7rem;">[ ЗАКРЫТЬ ]</button>
+  const overlay = document.createElement('div');
+  overlay.id = 'creatorPopup';
+  overlay.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 10000; animation: fadeIn 0.3s;';
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
+  
+  const isLight = document.body.classList.contains('light-theme');
+  
+  const popup = document.createElement('div');
+  popup.style.cssText = `
+    background: ${isLight ? '#fff' : '#111'};
+    border: 2px solid ${isLight ? '#1a6b1a' : '#00FF41'};
+    padding: 1.5rem;
+    max-width: 380px;
+    text-align: center;
+    box-shadow: 0 0 30px ${isLight ? 'rgba(0,0,0,0.2)' : 'rgba(0,255,65,0.2)'};
+    border-radius: 4px;
   `;
-  document.body.appendChild(panel);
-  setTimeout(() => panel.remove(), 5000);
+  
+  popup.innerHTML = `
+    <div style="font-size: 0.7rem; color: ${isLight ? '#888' : '#888'}; letter-spacing: 2px; margin-bottom: 0.5rem;">СОЗДАТЕЛЬ ШИФРА</div>
+    <img src="${data.portrait}" 
+         alt="${data.name}" 
+         style="width: 120px; height: 150px; object-fit: cover; border: 2px solid ${isLight ? '#1a6b1a' : '#00FF41'}; border-radius: 4px; margin-bottom: 1rem;"
+         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%22150%22><rect fill=%22%23333%22 width=%22120%22 height=%22150%22/><text fill=%22%230F0%22 x=%2260%22 y=%2275%22 text-anchor=%22middle%22 font-size=%2214%22>Портрет</text></svg>'">
+    <h3 style="color: ${isLight ? '#1a6b1a' : '#00FF41'}; font-size: 1.1rem; letter-spacing: 1px; margin-bottom: 0.3rem;">${data.name}</h3>
+    <p style="color: ${isLight ? '#666' : '#888'}; font-size: 0.8rem; margin-bottom: 0.3rem;">${data.years}</p>
+    <p style="color: ${isLight ? '#444' : '#aaa'}; font-size: 0.8rem; line-height: 1.4; margin-bottom: 1rem;">${data.fact}</p>
+    <button onclick="this.closest('#creatorPopup').remove()" 
+            style="border: 1px solid ${isLight ? '#1a6b1a' : '#00FF41'}; color: ${isLight ? '#1a6b1a' : '#00FF41'}; background: transparent; padding: 0.5rem 1rem; cursor: pointer; font-family: monospace; font-size: 0.8rem;">
+      [ ЗАКРЫТЬ ]
+    </button>
+  `;
+  
+  overlay.appendChild(popup);
+  document.body.appendChild(overlay);
 };
 
 export function renderHome() {
@@ -158,8 +212,8 @@ export function renderHome() {
       <main class="cipher-grid">
         ${ciphers.map((cipher, index) => `
           <div class="cipher-card" 
-               onclick="showCipherInfo('${cipher.id}')"
-               ondblclick="location.hash='#game?cipher=${cipher.id}'">
+               oncontextmenu="event.preventDefault(); showCipherInfo('${cipher.id}')"
+               onclick="location.hash='#game?cipher=${cipher.id}'">
                style="animation-delay: ${index * 0.1}s">
             <div class="card-header">
               <span class="card-number">[${String(index + 1).padStart(2, '0')}]</span>

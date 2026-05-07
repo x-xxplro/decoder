@@ -2191,3 +2191,8 @@ body.light-theme details summary {
 body.light-theme details summary:hover {
   color: #1a6b1a;
 }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
