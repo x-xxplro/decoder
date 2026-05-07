@@ -57,7 +57,7 @@ function showCipherInfo(cipherId) {
       portrait: 'https://media.sciencephoto.com/c0/26/46/87/c0264687-800px-wm.jpg'
     }
   };
-   
+  
   var data = creators[cipherId];
   if (!data) return;
   
@@ -122,11 +122,12 @@ export function renderHome() {
     '<footer class="home-footer">' +
     '<div class="footer-line"></div>' +
     '<nav class="footer-nav">' +
-    '<button class="nav-button" onclick="location.hash=\'#library\'"><span class="nav-icon">📚</span><span class="nav-label">Библиотека шифров</span></button>' +
-    '<button class="nav-button" onclick="location.hash=\'#achievements\'"><span class="nav-icon">🏆</span><span class="nav-label">Достижения</span>' + (achievementCount > 0 ? '<span class="nav-badge">' + achievementCount + '</span>' : '') + '</button>' +
-    '<button class="nav-button" onclick="showDeveloperInfo()"><span class="nav-icon">⚙</span><span class="nav-label">Разработчик</span></button>' +
+    '<button class="nav-button" onclick="location.hash=\'#library\'"><span class="nav-icon"></span><span class="nav-label">Библиотека шифров</span></button>' +
+    '<button class="nav-button" onclick="location.hash=\'#achievements\'"><span class="nav-icon"></span><span class="nav-label">Достижения</span>' + (achievementCount > 0 ? '<span class="nav-badge">' + achievementCount + '</span>' : '') + '</button>' +
+    '<button class="nav-button" onclick="location.hash=\'#gallery\'"><span class="nav-icon"></span><span class="nav-label">Галерея</span></button>' +
+    '<button class="nav-button" onclick="showDeveloperInfo()"><span class="nav-icon"></span><span class="nav-label">Разработчик</span></button>' +
     '</nav>' +
-    '<div class="footer-copyright"><span class="copyright-symbol">©</span> 2026 DECODER v1.0</div>' +
+    '<div class="footer-copyright"><span class="copyright-symbol">©</span> 2026 DECODER v1.0 <span style="font-size:0.9rem;color:#00cc44;">| Ctrl+] — бегущая строка</span></div>' +
     '</footer>' +
     '</div>';
   

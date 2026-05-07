@@ -3,6 +3,7 @@ import { renderLevelSelect } from './ui/levelSelect.js';
 import { renderGame } from './ui/gameView.js';
 import { renderLibrary } from './ui/library.js';
 import { renderAchievements } from './ui/achievements.js';
+import { renderGallery } from './ui/gallery.js';
 
 export function initRouter() {
   window.removeEventListener('hashchange', route);
@@ -33,6 +34,8 @@ function route() {
     } else if (hash.startsWith('#achievements')) {
       console.log('Загружаем достижения...');
       renderAchievements();
+    } else if (hash.startsWith('#gallery')) {
+      renderGallery();
     } else {
       console.log('Загружаем главный экран...');
       renderHome();
