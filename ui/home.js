@@ -39,7 +39,6 @@ const ciphers = [
   }
 ];
 
-// SVG иконки для каждого шифра
 const icons = {
   caesar: `<svg viewBox="0 0 64 64" width="64" height="64">
     <path fill="none" stroke="#00FF41" stroke-width="2" d="M20 50 L20 20 L30 15 L44 15 L44 25 L30 25 L30 20" stroke-linecap="round" stroke-linejoin="round"/>
@@ -139,12 +138,14 @@ window.showCipherInfo = function(cipherId) {
   };
   
   const data = creators[cipherId];
+  if (!data) return;
+  
   const existing = document.getElementById('creatorPopup');
   if (existing) existing.remove();
   
   const overlay = document.createElement('div');
   overlay.id = 'creatorPopup';
-  overlay.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 10000; animation: fadeIn 0.3s;';
+  overlay.style.cssText = 'position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center; z-index: 10000;';
   overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
   
   const isLight = document.body.classList.contains('light-theme');
@@ -161,11 +162,10 @@ window.showCipherInfo = function(cipherId) {
   `;
   
   popup.innerHTML = `
-    <div style="font-size: 0.7rem; color: ${isLight ? '#888' : '#888'}; letter-spacing: 2px; margin-bottom: 0.5rem;">СОЗДАТЕЛЬ ШИФРА</div>
-    <img src="${data.portrait}" 
-         alt="${data.name}" 
+    <div style="font-size: 0.7rem; color: #888; letter-spacing: 2px; margin-bottom: 0.5rem;">СОЗДАТЕЛЬ ШИФРА</div>
+    <img src="${data.portrait}" alt="${data.name}" 
          style="width: 120px; height: 150px; object-fit: cover; border: 2px solid ${isLight ? '#1a6b1a' : '#00FF41'}; border-radius: 4px; margin-bottom: 1rem;"
-         onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%22150%22><rect fill=%22%23333%22 width=%22120%22 height=%22150%22/><text fill=%22%230F0%22 x=%2260%22 y=%2275%22 text-anchor=%22middle%22 font-size=%2214%22>Портрет</text></svg>'">
+         onerror="this.style.display='none'">
     <h3 style="color: ${isLight ? '#1a6b1a' : '#00FF41'}; font-size: 1.1rem; letter-spacing: 1px; margin-bottom: 0.3rem;">${data.name}</h3>
     <p style="color: ${isLight ? '#666' : '#888'}; font-size: 0.8rem; margin-bottom: 0.3rem;">${data.years}</p>
     <p style="color: ${isLight ? '#444' : '#aaa'}; font-size: 0.8rem; line-height: 1.4; margin-bottom: 1rem;">${data.fact}</p>
@@ -187,7 +187,6 @@ export function renderHome() {
   
   app.innerHTML = `
     <div class="home-container">
-      <!-- Заголовок -->
       <header class="home-header">
         <div class="header-line">
           <span class="prompt-symbol">></span>
@@ -208,7 +207,6 @@ export function renderHome() {
         </div>
       </header>
 
-      <!-- Сетка карточек -->
       <main class="cipher-grid">
         ${ciphers.map((cipher, index) => `
           <div class="cipher-card" 
@@ -233,20 +231,22 @@ export function renderHome() {
         `).join('')}
       </main>
 
-      <!-- Футер с навигацией -->
       <footer class="home-footer">
         <div class="footer-line"></div>
         <nav class="footer-nav">
           <button class="nav-button" onclick="location.hash='#library'">
+            <span class="nav-icon">📚</span>
             <span class="nav-label">Библиотека шифров</span>
           </button>
           
           <button class="nav-button" onclick="location.hash='#achievements'">
+            <span class="nav-icon">🏆</span>
             <span class="nav-label">Достижения</span>
             ${achievementCount > 0 ? `<span class="nav-badge">${achievementCount}</span>` : ''}
           </button>
           
           <button class="nav-button" onclick="showDeveloperInfo()">
+            <span class="nav-icon">⚙</span>
             <span class="nav-label">Разработчик</span>
           </button>
         </nav>
@@ -254,25 +254,21 @@ export function renderHome() {
           <span class="copyright-symbol">©</span> 2026 DECODER v1.0
         </div>
       </footer>
-        // Обработчики кликов на карточки
-  setTimeout(() => {
-    document.querySelectorAll('.cipher-card').forEach(card => {
-      card.addEventListener('click', function() {
-        const cipherId = this.dataset.cipher;
-        location.hash = '#game?cipher=' + cipherId;
-      });
-      
-      card.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-        const cipherId = this.dataset.cipher;
-        showCipherInfo(cipherId);
-      });
-    });
-  }, 100);
     </div>
   `;
 
-  // Добавляем функцию показа информации о разработчике
+  setTimeout(() => {
+    document.querySelectorAll('.cipher-card').forEach(card => {
+      card.addEventListener('click', function() {
+        location.hash = '#game?cipher=' + this.dataset.cipher;
+      });
+      card.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        showCipherInfo(this.dataset.cipher);
+      });
+    });
+  }, 100);
+
   window.showDeveloperInfo = function() {
     const modal = document.createElement('div');
     modal.className = 'dev-modal';
@@ -287,37 +283,27 @@ export function renderHome() {
             <div class="info-label">ПРОЕКТ</div>
             <div class="info-value">DECODER — браузерная игра в области основ защиты информации и истории шифрования</div>
           </div>
-          
           <div class="info-divider"></div>
-          
           <div class="info-section">
             <div class="info-label">РАЗРАБОТЧИК</div>
             <div class="info-value highlight">Казакова М.Р.</div>
           </div>
-          
           <div class="info-divider"></div>
-          
           <div class="info-section">
             <div class="info-label">СПЕЦИАЛЬНОСТЬ</div>
             <div class="info-value">5-04-0612-02 «Разработка и сопровождение программного обеспечения информационных систем», PC02-23</div>
           </div>
-          
           <div class="info-divider"></div>
-          
           <div class="info-section">
             <div class="info-label">РОЛЬ</div>
             <div class="info-value">Проектировщик интерфейсов, Frontend и Backend разработчик</div>
           </div>
-          
           <div class="info-divider"></div>
-          
           <div class="info-section">
             <div class="info-label">ДАТА</div>
             <div class="info-value">04.05.2026</div>
           </div>
-          
           <div class="info-divider"></div>
-          
           <div class="info-section">
             <div class="info-label">СТЕК ТЕХНОЛОГИЙ</div>
             <div class="info-value">
@@ -326,15 +312,12 @@ export function renderHome() {
               <span class="tech-badge">JavaScript (SPA)</span>
             </div>
           </div>
-          
           <div class="info-divider"></div>
-          
           <p class="dev-quote">"Шифрование — это не сокрытие данных, а искусство их преобразования"</p>
         </div>
       </div>
     `;
     document.body.appendChild(modal);
-    
     modal.addEventListener('click', (e) => {
       if (e.target === modal) modal.remove();
     });
