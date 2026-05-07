@@ -254,6 +254,21 @@ export function renderHome() {
           <span class="copyright-symbol">©</span> 2026 DECODER v1.0
         </div>
       </footer>
+        // Обработчики кликов на карточки
+  setTimeout(() => {
+    document.querySelectorAll('.cipher-card').forEach(card => {
+      card.addEventListener('click', function() {
+        const cipherId = this.dataset.cipher;
+        location.hash = '#game?cipher=' + cipherId;
+      });
+      
+      card.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        const cipherId = this.dataset.cipher;
+        showCipherInfo(cipherId);
+      });
+    });
+  }, 100);
     </div>
   `;
 
