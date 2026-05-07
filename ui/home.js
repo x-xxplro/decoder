@@ -98,6 +98,33 @@ const icons = {
   </svg>`
 };
 
+window.showCipherInfo = function(cipherId) {
+  const info = {
+    caesar: { name: 'Цезарь', year: 'I век до н.э.', author: 'Гай Юлий Цезарь', fact: 'Сдвиг на 3 буквы вправо. Самый известный шифр древности.' },
+    atbash: { name: 'Атбаш', year: 'VI век до н.э.', author: 'Древний Израиль', fact: 'Зеркальная замена: А↔Я. Упоминается в Книге Иеремии.' },
+    polybius: { name: 'Полибий', year: 'II век до н.э.', author: 'Полибий', fact: 'Квадрат 5×5. Передача сигналов факелами на расстоянии.' },
+    vigenere: { name: 'Виженер', year: '1553 год', author: 'Блез де Виженер', fact: 'Полиалфавитный шифр. 300 лет считался невзламываемым.' },
+    morse: { name: 'Морзе', year: '1838 год', author: 'Сэмюэл Морзе', fact: 'Точки и тире. Сигнал SOS: ... --- ... Принят в 1906 году.' },
+    playfair: { name: 'Плейфер', year: '1854 год', author: 'Чарльз Уитстон', fact: 'Биграммный шифр. Матрица 6×6. Использовался в Первой мировой.' }
+  };
+  
+  const data = info[cipherId];
+  const existing = document.getElementById('cipherInfoPanel');
+  if (existing) existing.remove();
+  
+  const panel = document.createElement('div');
+  panel.id = 'cipherInfoPanel';
+  panel.style.cssText = 'position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: #111; border: 2px solid #00FF41; padding: 1rem 1.5rem; z-index: 999; max-width: 400px; text-align: center; box-shadow: 0 0 20px rgba(0,255,65,0.3); animation: fadeIn 0.3s;';
+  panel.innerHTML = `
+    <b style="color:#00FF41;">${data.name}</b><br>
+    <span style="font-size:0.8rem;color:#888;">${data.author}, ${data.year}</span><br>
+    <span style="font-size:0.75rem;color:#aaa;">${data.fact}</span>
+    <br><button onclick="this.parentElement.remove()" style="margin-top:0.5rem;font-size:0.7rem;">[ ЗАКРЫТЬ ]</button>
+  `;
+  document.body.appendChild(panel);
+  setTimeout(() => panel.remove(), 5000);
+};
+
 export function renderHome() {
   const app = document.getElementById('app');
   
@@ -131,7 +158,8 @@ export function renderHome() {
       <main class="cipher-grid">
         ${ciphers.map((cipher, index) => `
           <div class="cipher-card" 
-               onclick="location.hash='#game?cipher=${cipher.id}'"
+               onclick="showCipherInfo('${cipher.id}')"
+               ondblclick="location.hash='#game?cipher=${cipher.id}'">
                style="animation-delay: ${index * 0.1}s">
             <div class="card-header">
               <span class="card-number">[${String(index + 1).padStart(2, '0')}]</span>

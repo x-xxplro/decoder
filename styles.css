@@ -259,6 +259,38 @@ input[type="range"]::-moz-range-thumb {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
+.cipher-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.cipher-card::before,
+.cipher-card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #00FF41;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.cipher-card::before {
+  top: 0;
+  transform-origin: left;
+}
+
+.cipher-card::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.cipher-card:hover::before,
+.cipher-card:hover::after {
+  transform: scaleX(1);
+}
+
 .badge {
   display: inline-block;
   padding: 0.2rem 0.5rem;
