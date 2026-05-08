@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DECODER | Контакты</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/dark-hive/jquery-ui.css">
+  <style>
+    .contact-page { max-width: 600px; margin: 0 auto; padding: 1rem; }
+    .form-group { margin-bottom: 1rem; }
+    .form-group label { display: block; color: #888; font-size: 0.8rem; margin-bottom: 0.3rem; letter-spacing: 1px; }
+    .form-group input, .form-group textarea { width: 100%; padding: 0.6rem; border: 1px solid #333; background: #111; color: #00FF41; font-family: monospace; font-size: 0.9rem; }
+    .form-group textarea { height: 120px; resize: vertical; }
+    .form-group .error { color: #FF3333; font-size: 0.7rem; margin-top: 0.2rem; display: none; }
+    .form-group.error input, .form-group.error textarea { border-color: #FF3333; }
+    .form-group.error .error { display: block; }
+    .form-group.success input, .form-group.success textarea { border-color: #00FF41; }
+    .success-msg { text-align: center; color: #00FF41; font-size: 1.2rem; display: none; padding: 2rem; border: 1px solid #00FF41; margin-top: 1rem; }
+    .error-msg { text-align: center; color: #FF3333; font-size: 1rem; display: none; padding: 1rem; border: 1px solid #FF3333; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="contact-page">
+    <header class="library-header">
+      <div class="header-line"><span class="prompt-symbol">></span></div>
+      <h1 class="main-title" style="font-size:2.5rem;"><span class="glitch-text" data-text="КОНТАКТЫ">КОНТАКТЫ</span></h1>
+      <div class="subtitle-container">
+        <span class="line-decoration"></span>
+        <p class="subtitle">Свяжитесь с разработчиком</p>
+        <span class="line-decoration"></span>
+      </div>
+    </header>
+
+    <form id="contactForm" action="https://formspree.io/f/xjgledvq" method="POST">
+      <div class="form-group">
+        <label>ИМЯ *</label>
+        <input type="text" name="name" id="name" placeholder="Ваше имя...">
+        <div class="error">Введите имя (минимум 2 буквы)</div>
+      </div>
+      <div class="form-group">
+        <label>EMAIL *</label>
+        <input type="email" name="email" id="email" placeholder="your@email.com">
+        <div class="error">Введите корректный email</div>
+      </div>
+      <div class="form-group">
+        <label>ТЕМА *</label>
+        <input type="text" name="subject" id="subject" placeholder="Тема сообщения...">
+        <div class="error">Введите тему</div>
+      </div>
+      <div class="form-group">
+        <label>СООБЩЕНИЕ *</label>
+        <textarea name="message" id="message" placeholder="Ваше сообщение..."></textarea>
+        <div class="error">Введите сообщение (минимум 10 символов)</div>
+      </div>
+      <button type="submit" style="width:100%;font-family:monospace;background:transparent;color:#00FF41;border:1px solid #00FF41;padding:0.8rem;cursor:pointer;font-size:1rem;">[ ОТПРАВИТЬ ]</button>
+    </form>
+
+    <div class="success-msg" id="successMsg">
+      ✅ Сообщение отправлено!<br>
+      <span style="font-size:0.8rem;color:#888;">Ответ придёт на указанный email</span>
+    </div>
+    <div class="error-msg" id="errorMsg">
+      ❌ Ошибка отправки. Попробуйте позже.
+    </div>
+
+    <button class="nav-button" onclick="location.href='index.html'" style="margin:1.5rem auto;display:flex;">[ НА ГЛАВНУЮ ]</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+  <script>
+    $(function() {
+      function validateField(selector, condition) {
+        const $group = $(selector).closest('.form-group');
+        if (condition) {
+          $group.addClass('success').removeClass('error');
+          return true;
+        } else {
+          $group.addClass('error').removeClass('success');
+          return false;
+        }
+      }
+
+      $('#name').on('input', function() {
+        validateField(this, $(this).val().trim().length >= 2);
+      });
+
+      $('#email').on('input', function() {
+        validateField(this, /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($(this).val()));
+      });
+
+      $('#subject').on('input', function() {
+        validateField(this, $(this).val().trim().length > 0);
+      });
+
+      $('#message').on('input', function() {
+        validateField(this, $(this).val().trim().length >= 10);
+      });
+
+      $('#contactForm').on('submit', function(e) {
+        e.preventDefault();
+        const valid = 
+          validateField('#name', $('#name').val().trim().length >= 2) &&
+          validateField('#email', /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($('#email').val())) &&
+          validateField('#subject', $('#subject').val().trim().length > 0) &&
+          validateField('#message', $('#message').val().trim().length >= 10);
+
+        if (valid) {
+          const formData = {
+            name: $('#name').val().trim(),
+            email: $('#email').val().trim(),
+            subject: $('#subject').val().trim(),
+            message: $('#message').val().trim()
+          };
+
+          // Отправка через Formspree
+          $.ajax({
+            url: 'https://formspree.io/f/xjgledvq',
+            method: 'POST',
+            data: formData,
+            dataType: 'json',
+            success: function() {
+              $('#contactForm').slideUp(400);
+              $('#successMsg').slideDown(400);
+            },
+            error: function() {
+              $('#errorMsg').slideDown(400).delay(3000).slideUp(400);
+            }
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

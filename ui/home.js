@@ -125,6 +125,10 @@ export function renderHome() {
     '<button class="nav-button" onclick="location.hash=\'#library\'"><span class="nav-icon"></span><span class="nav-label">Библиотека шифров</span></button>' +
     '<button class="nav-button" onclick="location.hash=\'#achievements\'"><span class="nav-icon"></span><span class="nav-label">Достижения</span>' + (achievementCount > 0 ? '<span class="nav-badge">' + achievementCount + '</span>' : '') + '</button>' +
     '<button class="nav-button" onclick="location.hash=\'#gallery\'"><span class="nav-icon"></span><span class="nav-label">Галерея</span></button>' +
+    '<button class="nav-button" onclick="location.href=\'gallery.html\'"><span class="nav-icon"></span><span class="nav-label">Галерея jQuery</span></button>' +
+    '<button class="nav-button" onclick="location.href=\'contact.html\'"><span class="nav-icon"></span><span class="nav-label">Контакты</span></button>' +
+    '<button class="nav-button" onclick="location.href=\'register.html\'"><span class="nav-icon"></span><span class="nav-label">Профиль</span></button>' +
+    '<button class="nav-button" onclick="location.href=\'nav.html\'"><span class="nav-icon"></span><span class="nav-label">Навигация</span></button>' +
     '<button class="nav-button" onclick="showDeveloperInfo()"><span class="nav-icon"></span><span class="nav-label">Разработчик</span></button>' +
     '</nav>' +
     '<div class="footer-copyright"><span class="copyright-symbol">©</span> 2026 DECODER v1.0 <span style="font-size:0.9rem;color:#00cc44;">| Ctrl+] — бегущая строка</span></div>' +

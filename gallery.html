@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DECODER | Галерея </title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- jQuery UI -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/dark-hive/jquery-ui.css">
+  <style>
+    .gallery-page { max-width: 1000px; margin: 0 auto; padding: 1rem; }
+    .gallery-main { text-align: center; margin-bottom: 1rem; }
+    .gallery-main img { max-width: 100%; max-height: 400px; border: 2px solid #00FF41; border-radius: 4px; }
+    .gallery-main .caption { margin-top: 0.5rem; color: #00FF41; font-size: 1rem; font-weight: bold; }
+    .gallery-thumbs { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem; }
+    .gallery-thumbs img { width: 100px; height: 70px; object-fit: cover; border: 2px solid #333; cursor: pointer; transition: all 0.3s; }
+    .gallery-thumbs img:hover { border-color: #00FF41; transform: scale(1.1); }
+    .gallery-nav { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
+    .gallery-nav button { font-family: monospace; background: transparent; color: #00FF41; border: 1px solid #00FF41; padding: 0.5rem 1rem; cursor: pointer; }
+    .gallery-nav button:hover { background: #00FF41; color: #000; }
+    .gallery-add { text-align: center; margin-top: 1rem; display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; }
+    .gallery-add input { padding: 0.5rem; border: 1px solid #333; background: #111; color: #00FF41; font-family: monospace; }
+    .gallery-add button { font-family: monospace; background: transparent; color: #00FF41; border: 1px solid #00FF41; padding: 0.5rem 1rem; cursor: pointer; }
+    .gallery-add button:hover { background: #00FF41; color: #000; }
+  </style>
+</head>
+<body>
+  <div class="gallery-page">
+    <header class="library-header">
+      <div class="header-line"><span class="prompt-symbol">></span></div>
+      <h1 class="main-title" style="font-size:2.5rem;"><span class="glitch-text" data-text="ГАЛЕРЕЯ">ГАЛЕРЕЯ </span></h1>
+      <div class="subtitle-container">
+        <span class="line-decoration"></span>
+        <p class="subtitle">История шифрования в изображениях</p>
+        <span class="line-decoration"></span>
+      </div>
+    </header>
+
+    <div class="gallery-main">
+      <img id="mainImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Caesar_cipher_left_shift_of_3.svg/640px-Caesar_cipher_left_shift_of_3.svg.png" alt="Шифр Цезаря">
+      <div class="caption" id="imageCaption">Шифр Цезаря — сдвиг на 3 позиции</div>
+    </div>
+
+    <div class="gallery-nav">
+      <button id="prevBtn">[ ← НАЗАД ]</button>
+      <button id="nextBtn">[ ВПЕРЁД → ]</button>
+    </div>
+
+    <div class="gallery-thumbs" id="thumbnails"></div>
+
+    <div class="gallery-add">
+      <input type="text" id="addUrl" placeholder="URL изображения...">
+      <input type="text" id="addTitle" placeholder="Название...">
+      <button id="addBtn">[ ДОБАВИТЬ ]</button>
+    </div>
+
+    <button class="nav-button" onclick="location.href='index.html'" style="margin:1.5rem auto;display:flex;">[ НА ГЛАВНУЮ ]</button>
+  </div>
+
+  <div id="lightbox" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.9);z-index:9999;text-align:center;">
+    <span id="closeLightbox" style="position:absolute;top:20px;right:30px;color:#00FF41;font-size:2rem;cursor:pointer;font-family:monospace;">[X]</span>
+    <img id="lightboxImg" style="max-width:90%;max-height:80vh;margin-top:5vh;border:2px solid #00FF41;">
+    <div id="lightboxCaption" style="color:#00FF41;margin-top:1rem;font-size:1.2rem;"></div>
+  </div>
+
+  <!-- jQuery + jQuery UI -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+  <script src="gallery.js"></script>
+</body>
+</html>

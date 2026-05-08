@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DECODER | Регистрация</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/dark-hive/jquery-ui.css">
+  <style>
+    .register-page { max-width: 500px; margin: 0 auto; padding: 1rem; }
+
+    .form-group { margin-bottom: 1rem; }
+
+    .form-group label {
+      display: block;
+      color: #888;
+      font-size: 0.8rem;
+      margin-bottom: 0.3rem;
+      letter-spacing: 1px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 0.6rem;
+      border: 1px solid #333;
+      background: #111;
+      color: #00FF41;
+      font-family: monospace;
+      font-size: 0.9rem;
+    }
+
+    .form-group .error {
+      color: #FF3333;
+      font-size: 0.7rem;
+      display: none;
+    }
+
+    .form-group.error input {
+      border-color: #FF3333;
+    }
+
+    .form-group.error .error {
+      display: block;
+    }
+
+    .form-tabs {
+      display: flex;
+      gap: 0;
+      margin-bottom: 3rem; /* БЫЛО 1.5rem */
+    }
+
+    .form-tabs button {
+      flex: 1;
+      font-family: monospace;
+      background: transparent;
+      color: #888;
+      border: 1px solid #333;
+      padding: 0.8rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .form-tabs button.active {
+      color: #00FF41;
+      border-color: #00FF41;
+      background: rgba(0,255,65,0.05);
+    }
+
+    .form-panel {
+      display: none;
+      margin-top: 1rem; /* ДОБАВИЛ */
+    }
+
+    .form-panel.active {
+      display: block;
+    }
+
+    .success-msg {
+      text-align: center;
+      color: #00FF41;
+      padding: 2rem;
+      border: 1px solid #00FF41;
+      display: none;
+    }
+
+    .strength-bar {
+      height: 4px;
+      background: #333;
+      margin-top: 0.3rem;
+    }
+
+    .strength-bar div {
+      height: 100%;
+      transition: width 0.3s;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-page">
+    <header class="library-header">
+      <div class="header-line"><span class="prompt-symbol">></span></div>
+      <h1 class="main-title" style="font-size:2.5rem;"><span class="glitch-text" data-text="ПРОФИЛЬ">ПРОФИЛЬ</span></h1>
+    </header>
+
+    <div class="form-tabs">
+      <button class="active" data-tab="login">[ ВХОД ]</button>
+      <button data-tab="register">[ РЕГИСТРАЦИЯ ]</button>
+    </div>
+
+    <!-- Форма входа -->
+    <div class="form-panel active" id="loginPanel">
+      <form id="loginForm">
+        <div class="form-group">
+          <label>EMAIL</label>
+          <input type="text" id="loginEmail" placeholder="your@email.com" title="Введите email для входа">
+          <div class="error">Введите корректный email</div>
+        </div>
+        <div class="form-group">
+          <label>ПАРОЛЬ</label>
+          <input type="password" id="loginPass" placeholder="••••••••" title="Введите пароль">
+          <div class="error">Пароль обязателен</div>
+        </div>
+        <button type="submit" style="width:100%;font-family:monospace;background:transparent;color:#00FF41;border:1px solid #00FF41;padding:0.8rem;cursor:pointer;">[ ВОЙТИ ]</button>
+      </form>
+    </div>
+
+    <!-- Форма регистрации -->
+    <div class="form-panel" id="registerPanel">
+      <form id="registerForm">
+        <div class="form-group">
+          <label>ИМЯ</label>
+          <input type="text" id="regName" placeholder="Ваше имя" title="Введите ваше имя">
+          <div class="error">Имя должно содержать минимум 2 буквы</div>
+        </div>
+        <div class="form-group">
+          <label>ФАМИЛИЯ</label>
+          <input type="text" id="regSurname" placeholder="Ваша фамилия" title="Введите вашу фамилию">
+          <div class="error">Фамилия обязательна</div>
+        </div>
+        <div class="form-group">
+          <label>EMAIL</label>
+          <input type="text" id="regEmail" placeholder="your@email.com" title="Введите email адрес">
+          <div class="error">Введите корректный email</div>
+        </div>
+        <div class="form-group">
+          <label>ПАРОЛЬ</label>
+          <input type="password" id="regPass" placeholder="••••••••" title="Минимум 6 символов">
+          <div class="strength-bar"><div id="strengthFill" style="width:0%;"></div></div>
+          <div class="error">Пароль должен содержать минимум 6 символов</div>
+        </div>
+        <button type="submit" style="width:100%;font-family:monospace;background:transparent;color:#00FF41;border:1px solid #00FF41;padding:0.8rem;cursor:pointer;">[ ЗАРЕГИСТРИРОВАТЬСЯ ]</button>
+      </form>
+    </div>
+
+    <div class="success-msg" id="regSuccess">
+      ✅ Регистрация успешна!<br>
+      <span style="font-size:0.8rem;color:#888;">Данные сохранены в localStorage</span>
+    </div>
+
+    <button class="nav-button" onclick="location.href='index.html'" style="margin:1.5rem auto;display:flex;">[ НА ГЛАВНУЮ ]</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+  <script>
+    $(function() {
+      // Tooltips
+      $('input').tooltip({ position: { my: 'left+15 center', at: 'right center' } });
+
+      // Переключение вкладок
+      $('.form-tabs button').click(function() {
+        $('.form-tabs button').removeClass('active');
+        $(this).addClass('active');
+        $('.form-panel').removeClass('active');
+        $('#' + $(this).data('tab') + 'Panel').addClass('active');
+      });
+
+      // Индикатор силы пароля
+      $('#regPass').on('input', function() {
+        const val = $(this).val();
+        let strength = 0;
+        if (val.length >= 6) strength += 25;
+        if (val.length >= 8) strength += 25;
+        if (/[A-ZА-ЯЁ]/.test(val)) strength += 25;
+        if (/[0-9!@#$%]/.test(val)) strength += 25;
+        $('#strengthFill').css({
+          width: strength + '%',
+          background: strength <= 25 ? '#FF3333' : strength <= 50 ? '#FFD700' : strength <= 75 ? '#00BFFF' : '#00FF41'
+        });
+      });
+
+      // Регистрация
+      $('#registerForm').on('submit', function(e) {
+        e.preventDefault();
+        const data = {
+          name: $('#regName').val().trim(),
+          surname: $('#regSurname').val().trim(),
+          email: $('#regEmail').val().trim(),
+          pass: $('#regPass').val()
+        };
+        if (data.name.length >= 2 && data.surname.length > 0 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email) && data.pass.length >= 6) {
+          localStorage.setItem('decoder_user', JSON.stringify(data));
+          $(this).slideUp();
+          $('#regSuccess').slideDown();
+        }
+      });
+
+      // Вход
+      $('#loginForm').on('submit', function(e) {
+        e.preventDefault();
+        const saved = JSON.parse(localStorage.getItem('decoder_user') || '{}');
+        if ($('#loginEmail').val() === saved.email && $('#loginPass').val() === saved.pass) {
+          alert('Вход выполнен! Добро пожаловать, ' + saved.name);
+        } else {
+          alert('Неверный email или пароль');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

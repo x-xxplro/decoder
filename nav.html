@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DECODER | Навигация</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/dark-hive/jquery-ui.css">
+  <style>
+    .nav-page { max-width: 800px; margin: 0 auto; padding: 1rem; }
+    
+    /* Меню */
+    .main-nav { margin-bottom: 2rem; }
+    .main-nav ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 0; border: 1px solid #333; }
+    .main-nav > ul > li { position: relative; flex: 1; }
+    .main-nav > ul > li > a { display: block; padding: 0.8rem 1rem; color: #00FF41; text-decoration: none; text-align: center; font-family: monospace; letter-spacing: 1px; border-right: 1px solid #333; transition: all 0.3s; }
+    .main-nav > ul > li:last-child > a { border-right: none; }
+    .main-nav > ul > li > a:hover, .main-nav > ul > li > a.active { background: rgba(0,255,65,0.1); }
+    
+    /* Подменю */
+    .main-nav .submenu { display: none; position: absolute; top: 100%; left: 0; background: #0a0a0a; border: 1px solid #00FF41; min-width: 200px; z-index: 100; }
+    .main-nav li:hover > .submenu { display: block; }
+    .main-nav .submenu li { border-bottom: 1px solid #222; }
+    .main-nav .submenu li:last-child { border-bottom: none; }
+    .main-nav .submenu a { display: block; padding: 0.6rem 1rem; color: #888; text-decoration: none; font-family: monospace; font-size: 0.85rem; }
+    .main-nav .submenu a:hover { color: #00FF41; background: rgba(0,255,65,0.05); }
+    
+    /* Поиск */
+    .search-box { margin-bottom: 1rem; display: flex; gap: 0.5rem; }
+    .search-box input { flex: 1; padding: 0.5rem; border: 1px solid #333; background: #111; color: #00FF41; font-family: monospace; }
+    .search-box button { font-family: monospace; background: transparent; color: #00FF41; border: 1px solid #00FF41; padding: 0.5rem 1rem; cursor: pointer; }
+
+    /* Панели */
+    .accordion { margin-bottom: 1rem; }
+    .accordion h3 { cursor: pointer; padding: 0.7rem 1rem; border: 1px solid #333; margin: 0; background: #0a0a0a; font-size: 0.9rem; }
+    .accordion h3:hover { border-color: #00FF41; }
+    .accordion .content { padding: 1rem; border: 1px solid #333; border-top: none; display: none; color: #aaa; font-size: 0.85rem; }
+    
+    /* Уведомление */
+    .notification { position: fixed; top: 20px; right: 20px; background: #0a0a0a; border: 1px solid #00FF41; padding: 1rem; z-index: 9999; display: none; max-width: 300px; }
+    .notification .close-notify { float: right; cursor: pointer; color: #888; }
+
+    /* Адаптивность */
+    @media (max-width: 768px) {
+      .main-nav > ul { flex-direction: column; }
+      .main-nav > ul > li > a { border-right: none; border-bottom: 1px solid #333; }
+      .main-nav .submenu { position: static; }
+      .search-box { flex-direction: column; }
+    }
+
+    /* Draggable */
+    .draggable-box { width: 150px; padding: 0.5rem; border: 1px solid #00FF41; text-align: center; cursor: move; position: absolute; z-index: 99; font-size: 0.8rem; color: #00FF41; background: #0a0a0a; }
+    
+    /* Sortable */
+    .sortable-list { list-style: none; padding: 0; }
+    .sortable-list li { padding: 0.6rem 1rem; border: 1px solid #333; margin-bottom: 4px; cursor: move; background: #0a0a0a; font-family: monospace; }
+    .sortable-list li:hover { border-color: #00FF41; }
+  </style>
+</head>
+<body>
+  <div class="nav-page">
+    <header class="library-header">
+      <div class="header-line"><span class="prompt-symbol">></span></div>
+      <h1 class="main-title" style="font-size:2.5rem;"><span class="glitch-text" data-text="НАВИГАЦИЯ">НАВИГАЦИЯ</span></h1>
+    </header>
+
+    <!-- Поиск (Autocomplete) -->
+    <div class="search-box">
+      <input type="text" id="menuSearch" placeholder="Поиск по разделам...">
+      <button id="searchBtn">[ НАЙТИ ]</button>
+    </div>
+
+    <!-- Меню -->
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">ГЛАВНАЯ</a></li>
+        <li>
+          <a href="#"> ШИФРЫ</a>
+          <ul class="submenu">
+            <li><a href="index.html#game?cipher=caesar">Цезарь</a></li>
+            <li><a href="index.html#game?cipher=atbash">Атбаш</a></li>
+            <li><a href="index.html#game?cipher=polybius">Полибий</a></li>
+            <li><a href="index.html#game?cipher=vigenere">Виженер</a></li>
+            <li><a href="index.html#game?cipher=morse">Морзе</a></li>
+            <li><a href="index.html#game?cipher=playfair">Плейфер</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#library">БИБЛИОТЕКА</a></li>
+        <li><a href="index.html#achievements"> ДОСТИЖЕНИЯ</a></li>
+        <li><a href="gallery.html"> ГАЛЕРЕЯ</a></li>
+        <li><a href="contact.html">КОНТАКТЫ</a></li>
+      </ul>
+    </nav>
+
+    <!-- Аккордеон (Accordion) -->
+    <div class="accordion">
+      <h3>О проекте DECODER</h3>
+      <div class="content">Браузерная игра-головоломка для изучения классических шифров. 6 шифров, 3 уровня сложности, 360 заданий.</div>
+      <h3>Стек технологий</h3>
+      <div class="content">HTML5, CSS3, JavaScript (ES6+), jQuery 3.7, jQuery UI 1.13, Netlify</div>
+      <h3>Статистика</h3>
+      <div class="content">Всего достижений: 24. Заданий в базе: 360. Шифров: 6.</div>
+    </div>
+
+    <!-- Sortable список -->
+    <h3 style="font-size:0.9rem;">Порядок изучения шифров (перетащите):</h3>
+    <ul class="sortable-list" id="sortable">
+      <li>1. Цезарь (самый простой)</li>
+      <li>2. Морзе (кодирование)</li>
+      <li>3. Атбаш (зеркало)</li>
+      <li>4. Полибий (координаты)</li>
+      <li>5. Виженер (ключ)</li>
+      <li>6. Плейфер (биграммы)</li>
+    </ul>
+
+    <!-- Draggable элемент -->
+    <div class="draggable-box" id="draggable" style="top:200px;right:20px;">
+      🔐<br>Перетащи<br>меня
+    </div>
+
+    <!-- Уведомление -->
+    <div class="notification" id="notification">
+      <span class="close-notify">[X]</span>
+      <div id="notifyText"></div>
+    </div>
+
+    <button class="nav-button" onclick="location.href='index.html'" style="margin:1.5rem auto;display:flex;">[ НА ГЛАВНУЮ ]</button>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
+  <script>
+    $(function() {
+      // Аккордеон
+      $('.accordion h3').click(function() {
+        $(this).next('.content').slideToggle(300);
+        $(this).parent().siblings().find('.content').slideUp(300);
+      });
+
+      // Sortable
+      $('#sortable').sortable({ placeholder: 'ui-state-highlight' });
+
+      // Draggable
+      $('#draggable').draggable({ containment: 'body' });
+
+      // Autocomplete
+      const menuItems = ['Главная', 'Шифры', 'Цезарь', 'Атбаш', 'Полибий', 'Виженер', 'Морзе', 'Плейфер', 'Библиотека', 'Достижения', 'Галерея', 'Контакты'];
+      $('#menuSearch').autocomplete({ source: menuItems });
+
+      $('#searchBtn').click(function() {
+        const term = $('#menuSearch').val();
+        if (term) {
+          $('#notifyText').text('Поиск: ' + term + ' — найдено в разделах');
+          $('#notification').fadeIn(300).delay(2000).fadeOut(300);
+        }
+      });
+
+      // Сохранение активного пункта меню
+      $('.main-nav a').click(function() {
+        localStorage.setItem('active_menu', $(this).text());
+        $('.main-nav a').removeClass('active');
+        $(this).addClass('active');
+      });
+
+      const saved = localStorage.getItem('active_menu');
+      if (saved) {
+        $('.main-nav a').each(function() {
+          if ($(this).text().trim() === saved.trim()) $(this).addClass('active');
+        });
+      }
+
+      // Закрытие уведомления
+      $('.close-notify').click(function() { $('#notification').fadeOut(300); });
+    });
+  </script>
+</body>
+</html>
