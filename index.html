@@ -34,5 +34,64 @@
   <button id="marqueeSpeed" style="font-size:0.6rem;padding:3px 6px;">[ ▶▶ ]</button>
   <button id="marqueeColor" style="font-size:0.6rem;padding:3px 6px;">[ 🎨 ]</button>
 </div>
+<!-- Кнопка открытия панели -->
+<button id="openPanel" style="position: fixed; top: 50%; right: 0; z-index: 9997; font-family: monospace; background: #0a0a0a; color: #00FF41; border: 2px solid #00FF41; border-right: none; padding: 0.8rem 0.5rem; cursor: pointer; writing-mode: vertical-rl; text-orientation: mixed; letter-spacing: 5px; transform: translateY(-50%); font-size: 1rem;">И Н Ф О</button>
+
+<!-- Выдвижная панель -->
+<div id="slidePanel" style="position: fixed; top: 0; right: -380px; width: 350px; height: 100vh; background: #0a0a0a; border-left: 2px solid #00FF41; z-index: 10000; transition: right 0.4s ease; padding: 1.5rem; overflow-y: auto;">
+  
+  <!-- Шапка панели -->
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; border-bottom: 1px solid #333; padding-bottom: 0.8rem;">
+    <span style="color: #00FF41; font-size: 1.2rem; letter-spacing: 3px; font-weight: bold;">> ИНФОПАНЕЛЬ</span>
+    <button id="closePanel" style="background:transparent;border:1px solid #00FF41;color:#00FF41;cursor:pointer;font-family:monospace;padding:0.3rem 0.6rem;">[X]</button>
+  </div>
+  
+  <!-- Содержимое -->
+  <div style="color: #aaa; font-size: 0.85rem; line-height: 1.7;">
+    <p>Добро пожаловать в <b style="color:#00FF41;">DECODER</b> — браузерную игру-головоломку для изучения <b style="color:#FFD700;">классических шифров</b> и основ криптографии.</p>
+    
+    <div style="border-left: 2px solid #00FF41; padding-left: 0.8rem; margin: 1rem 0;">
+      <p style="color:#00FF41;font-weight:bold;margin:0;">📊 СТАТИСТИКА ПРОЕКТА</p>
+      <p style="margin:0.3rem 0;font-size:0.8rem;color:#888;">
+        • 6 методов шифрования<br>
+        • 3 уровня сложности<br>
+        • 360 заданий в базе<br>
+        • 24 достижения<br>
+        • 33 буквы русского алфавита
+      </p>
+    </div>
+    
+    <div style="border-left: 2px solid #FFD700; padding-left: 0.8rem; margin: 1rem 0;">
+      <p style="color:#FFD700;font-weight:bold;margin:0;">💡 СОВЕТЫ НОВИЧКУ</p>
+      <p style="margin:0.3rem 0;font-size:0.8rem;color:#888;">
+        • Начинайте с уровня <b style="color:#00FF41;">«Новичок»</b><br>
+        • Там есть подсказки и подсветка букв<br>
+        • Используйте черновик (SCRATCHPAD)<br>
+        • Читайте библиотеку шифров
+      </p>
+    </div>
+    
+    <div style="border-left: 2px solid #00BFFF; padding-left: 0.8rem; margin: 1rem 0;">
+      <p style="color:#00BFFF;font-weight:bold;margin:0;">⚙ ВОЗМОЖНОСТИ</p>
+      <p style="margin:0.3rem 0;font-size:0.8rem;color:#888;">
+        • Светлая/тёмная тема<br>
+        • Бегущая строка (Ctrl+])<br>
+        • Галерея изображений<br>
+        • Контактная форма<br>
+        • Профиль пользователя
+      </p>
+    </div>
+    
+    <div style="border-left: 2px solid #B347EA; padding-left: 0.8rem; margin: 1rem 0;">
+      <p style="color:#B347EA;font-weight:bold;margin:0;">🔐 ДОСТУПНЫЕ ШИФРЫ</p>
+      <p style="margin:0.3rem 0;font-size:0.8rem;color:#888;">
+        🟢 Цезарь — сдвиг букв<br>
+        🟢 Атбаш — зеркальная замена<br>
+        🟢 Полибий — квадрат 5×5<br>
+        🟢 Виженер — ключевое слово<br>
+        🟢 Морзе — точки и тире<br>
+        🟢 Плейфер — биграммы
+      </p>
+    </div>
 </body>
 </html>

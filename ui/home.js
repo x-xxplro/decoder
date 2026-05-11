@@ -103,6 +103,13 @@ export function renderHome() {
   var achievementCount = achievements.length;
   
   app.innerHTML = '<div class="home-container">' +
+    '<!-- Анимированный баннер -->' +
+    '<div id="cryptoBanner" style="width: 100%; background: #0a0a0a; border-bottom: 2px solid #00FF41; overflow: hidden; padding: 0.8rem 0; position: relative; margin-bottom: 1.5rem;">' +
+      '<div id="bannerText" style="white-space: nowrap; color: #00FF41; font-family: monospace; font-size: 0.9rem; letter-spacing: 3px; animation: bannerScroll 20s linear infinite;">' +
+        '🔐 ЦЕЗАРЬ • АТБАШ • ПОЛИБИЙ • ВИЖЕНЕР • МОРЗЕ • ПЛЕЙФЕР • РАСШИФРУЙ ИСТОРИЮ • СТАНЬ КРИПТОГРАФОМ • ВЗЛОМАЙ КОД • DECODER 🔐 &nbsp;&nbsp;&nbsp;' +
+        '🔐 ЦЕЗАРЬ • АТБАШ • ПОЛИБИЙ • ВИЖЕНЕР • МОРЗЕ • ПЛЕЙФЕР • РАСШИФРУЙ ИСТОРИЮ • СТАНЬ КРИПТОГРАФОМ • ВЗЛОМАЙ КОД • DECODER 🔐' +
+      '</div>' +
+    '</div>' +
     '<header class="home-header">' +
     '<div class="header-line"><span class="prompt-symbol">></span></div>' +
     '<h1 class="main-title"><span class="glitch-text" data-text="DECODER">DECODER</span></h1>' +

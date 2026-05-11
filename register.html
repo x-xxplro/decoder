@@ -167,14 +167,24 @@
       // Tooltips
       $('input').tooltip({ position: { my: 'left+15 center', at: 'right center' } });
 
-      // Переключение вкладок
+      // Переключение вкладок с плавной анимацией
       $('.form-tabs button').click(function() {
+        const tab = $(this).data('tab');
+        const $currentPanel = $('.form-panel.active');
+        const $newPanel = $('#' + tab + 'Panel');
+        
+        if ($currentPanel.attr('id') === $newPanel.attr('id')) return;
+        
+        // Меняем активную вкладку
         $('.form-tabs button').removeClass('active');
         $(this).addClass('active');
-        $('.form-panel').removeClass('active');
-        $('#' + $(this).data('tab') + 'Panel').addClass('active');
+        
+        // Плавная анимация перехода
+        $currentPanel.fadeOut(300, function() {
+          $currentPanel.removeClass('active');
+          $newPanel.css({ opacity: 0, display: 'block' }).addClass('active').animate({ opacity: 1 }, 400);
+        });
       });
-
       // Индикатор силы пароля
       $('#regPass').on('input', function() {
         const val = $(this).val();

@@ -2192,6 +2192,73 @@ body.light-theme details summary:hover {
   color: #1a6b1a;
 }
 
+/* ==================== СВЕТЛАЯ ТЕМА — ПАНЕЛЬ И БЕГУЩАЯ СТРОКА ==================== */
+
+body.light-theme #slidePanel {
+  background: #f5f5f0;
+  border-left-color: #1a6b1a;
+}
+
+body.light-theme #slidePanel span,
+body.light-theme #slidePanel p,
+body.light-theme #slidePanel div {
+  color: #333;
+}
+
+body.light-theme #slidePanel b {
+  color: #1a6b1a;
+}
+
+body.light-theme #slidePanel [style*="color:#00FF41"] {
+  color: #1a6b1a !important;
+}
+
+body.light-theme #slidePanel [style*="color:#FFD700"] {
+  color: #b8860b !important;
+}
+
+body.light-theme #slidePanel [style*="color:#00BFFF"] {
+  color: #0066cc !important;
+}
+
+body.light-theme #slidePanel [style*="color:#B347EA"] {
+  color: #7b2d8e !important;
+}
+
+body.light-theme #slidePanel [style*="border-left: 2px solid"] {
+  border-left-color: #1a6b1a !important;
+}
+
+body.light-theme #marquee {
+  background: #f5f5f0 !important;
+  border-top-color: #ccc !important;
+}
+
+body.light-theme #marqueeText {
+  color: #1a6b1a !important;
+}
+
+body.light-theme #marqueeClose {
+  background: #f5f5f0 !important;
+  color: #1a6b1a !important;
+  border-color: #1a6b1a !important;
+}
+
+body.light-theme #marqueeControls button {
+  background: #f5f5f0 !important;
+  color: #1a6b1a !important;
+  border-color: #1a6b1a !important;
+}
+
+body.light-theme #cryptoBanner {
+  background: #f5f5f0 !important;
+  border-bottom-color: #1a6b1a !important;
+}
+
+body.light-theme #bannerText {
+  color: #1a6b1a !important;
+}
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -2250,4 +2317,115 @@ body.light-theme details summary:hover {
   padding: 2px 6px !important;
   margin: 0 !important;
   background: rgba(0,0,0,0.7) !important;
+}
+
+/* Анимированный баннер */
+@keyframes bannerScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+#bannerText:hover {
+  animation-play-state: paused;
+  color: #FFD700;
+  text-shadow: 0 0 15px rgba(255,215,0,0.6);
+}
+
+#cryptoBanner::before,
+#cryptoBanner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  z-index: 1;
+}
+#cryptoBanner::before {
+  left: 0;
+  background: linear-gradient(to right, #0a0a0a, transparent);
+}
+#cryptoBanner::after {
+  right: 0;
+  background: linear-gradient(to left, #0a0a0a, transparent);
+}
+
+/* ==================== ПОЛЬЗОВАТЕЛЬСКИЕ АНИМАЦИИ ==================== */
+
+/* Пульсация кнопки ВЗЛОМАТЬ */
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 5px rgba(0,255,65,0.3); }
+  50% { box-shadow: 0 0 25px rgba(0,255,65,0.8); }
+}
+
+button.primary {
+  animation: pulseGlow 2s infinite;
+}
+button.primary:hover {
+  animation: none;
+}
+
+/* Анимация появления карточек */
+@keyframes cardAppear {
+  from { opacity: 0; transform: translateY(30px) rotateX(10deg); }
+  to { opacity: 1; transform: translateY(0) rotateX(0); }
+}
+
+.cipher-card {
+  animation: cardAppear 0.6s ease forwards;
+}
+
+/* Анимация дрожания при ошибке */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-5px); }
+  40% { transform: translateX(5px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+
+.shake {
+  animation: shake 0.4s ease;
+}
+
+/* Анимация свечения при успехе */
+@keyframes successGlow {
+  0% { box-shadow: 0 0 5px rgba(0,255,65,0.3); }
+  50% { box-shadow: 0 0 40px rgba(0,255,65,0.9); }
+  100% { box-shadow: 0 0 5px rgba(0,255,65,0.3); }
+}
+
+.success-glow {
+  animation: successGlow 1s ease 3;
+}
+
+/* Анимация печатания текста */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.typing-effect {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 2s steps(30) forwards;
+}
+
+/* Анимация мерцания (для секретных достижений) */
+@keyframes secretShimmer {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.7; }
+}
+
+.achievement-card.locked[data-secret="true"] {
+  animation: secretShimmer 2s infinite;
+}
+
+/* Вращение иконок */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin:hover {
+  animation: spin 0.6s ease;
 }
