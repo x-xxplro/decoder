@@ -3,69 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DECODER | Галерея </title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- jQuery UI -->
+  <title>DECODER | Галерея</title>
+  <!-- jQuery UI тема -->
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/dark-hive/jquery-ui.css">
+  <link rel="stylesheet" href="styles.css">
   <style>
     .gallery-page { max-width: 1000px; margin: 0 auto; padding: 1rem; }
     .gallery-main { text-align: center; margin-bottom: 1rem; }
-    .gallery-main img { max-width: 100%; max-height: 400px; border: 2px solid #00FF41; border-radius: 4px; }
-    .gallery-main .caption { margin-top: 0.5rem; color: #00FF41; font-size: 1rem; font-weight: bold; }
-    .gallery-thumbs { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem; }
-    .gallery-thumbs img { width: 100px; height: 70px; object-fit: cover; border: 2px solid #333; cursor: pointer; transition: all 0.3s; }
-    .gallery-thumbs img:hover { border-color: #00FF41; transform: scale(1.1); }
-    .gallery-nav { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1rem; }
-    .gallery-nav button { font-family: monospace; background: transparent; color: #00FF41; border: 1px solid #00FF41; padding: 0.5rem 1rem; cursor: pointer; }
-    .gallery-nav button:hover { background: #00FF41; color: #000; }
+    .gallery-main img { max-width: 100%; max-height: 400px; border: 2px solid #00FF41; border-radius: 4px; cursor: pointer; }
+    .gallery-thumbs { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; margin: 1rem 0; }
+    .gallery-thumbs img { width: 100px; height: 70px; object-fit: cover; border: 2px solid #333; cursor: move; }
+    .gallery-thumbs img:hover { border-color: #00FF41; }
+    .gallery-thumbs .ui-draggable-dragging { border-color: #FFD700 !important; box-shadow: 0 0 15px rgba(255,215,0,0.5); z-index: 999; }
+    .gallery-nav { display: flex; justify-content: center; gap: 1rem; margin: 1rem 0; }
     .gallery-add { text-align: center; margin-top: 1rem; display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; }
-    .gallery-add input { padding: 0.5rem; border: 1px solid #333; background: #111; color: #00FF41; font-family: monospace; }
-    .gallery-add button { font-family: monospace; background: transparent; color: #00FF41; border: 1px solid #00FF41; padding: 0.5rem 1rem; cursor: pointer; }
-    .gallery-add button:hover { background: #00FF41; color: #000; }
+    .gallery-add input { padding: 0.5rem; border: 1px solid #333; background: #111; color: #00FF41; font-family: monospace; width: 250px; }
+    .dialog-image { max-width: 100%; max-height: 70vh; display: block; margin: 0 auto; }
   </style>
 </head>
 <body>
   <div class="gallery-page">
     <header class="library-header">
       <div class="header-line"><span class="prompt-symbol">></span></div>
-      <h1 class="main-title" style="font-size:2.5rem;"><span class="glitch-text" data-text="ГАЛЕРЕЯ">ГАЛЕРЕЯ </span></h1>
+      <h1 class="main-title" style="font-size:2.5rem;"><span class="glitch-text" data-text="ГАЛЕРЕЯ">ГАЛЕРЕЯ</span></h1>
       <div class="subtitle-container">
         <span class="line-decoration"></span>
-        <p class="subtitle">История шифрования в изображениях</p>
+        <p class="subtitle">jQuery UI Dialog + Draggable</p>
         <span class="line-decoration"></span>
       </div>
     </header>
 
     <div class="gallery-main">
       <img id="mainImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Caesar_cipher_left_shift_of_3.svg/640px-Caesar_cipher_left_shift_of_3.svg.png" alt="Шифр Цезаря">
-      <div class="caption" id="imageCaption">Шифр Цезаря — сдвиг на 3 позиции</div>
+      <div class="caption" id="imageCaption" style="color:#00FF41;margin-top:0.5rem;font-weight:bold;"></div>
     </div>
 
     <div class="gallery-nav">
-      <button id="prevBtn">[ ← НАЗАД ]</button>
-      <button id="nextBtn">[ ВПЕРЁД → ]</button>
+      <button id="prevBtn" class="ui-button ui-widget ui-corner-all">← НАЗАД</button>
+      <button id="nextBtn" class="ui-button ui-widget ui-corner-all">ВПЕРЁД →</button>
     </div>
 
     <div class="gallery-thumbs" id="thumbnails"></div>
 
     <div class="gallery-add">
-      <input type="text" id="addUrl" placeholder="URL изображения...">
-      <input type="text" id="addTitle" placeholder="Название...">
-      <button id="addBtn">[ ДОБАВИТЬ ]</button>
+      <input type="text" id="addUrl" placeholder="URL изображения..." class="ui-widget ui-corner-all">
+      <input type="text" id="addTitle" placeholder="Название..." class="ui-widget ui-corner-all">
+      <button id="addBtn" class="ui-button ui-widget ui-corner-all">ДОБАВИТЬ</button>
     </div>
 
-    <button class="nav-button" onclick="location.href='index.html'" style="margin:1.5rem auto;display:flex;">[ НА ГЛАВНУЮ ]</button>
+    <button class="nav-button" onclick="location.href='index.html'" style="margin:1.5rem auto;display:flex;">НА ГЛАВНУЮ</button>
   </div>
 
-  <div id="lightbox" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.9);z-index:9999;text-align:center;">
-    <span id="closeLightbox" style="position:absolute;top:20px;right:30px;color:#00FF41;font-size:2rem;cursor:pointer;font-family:monospace;">[X]</span>
-    <img id="lightboxImg" style="max-width:90%;max-height:80vh;margin-top:5vh;border:2px solid #00FF41;">
-    <div id="lightboxCaption" style="color:#00FF41;margin-top:1rem;font-size:1.2rem;"></div>
+  <!-- Диалог для увеличенного изображения -->
+  <div id="imageDialog" title="Просмотр изображения" style="display:none;">
+    <img id="dialogImage" class="dialog-image" src="" alt="">
+    <p id="dialogCaption" style="text-align:center;color:#00FF41;margin-top:0.5rem;"></p>
   </div>
 
-  <!-- jQuery + jQuery UI -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
-  <script src="gallery.js"></script>
+  <script>
+    $(function() {
+      let images = JSON.parse(localStorage.getItem('jq_gallery') || 'null') || [
+        { url: 'https://udoba.org/sites/default/files/h5p/content/58147/images/file-6381323a7d974.jpeg', title: 'Шифр Цезаря', desc: 'Сдвиг на 3 позиции' },
+        { url: 'https://naurok.com.ua/uploads/files/67061/33329/33501_images/5.jpg', title: 'Шифр Атбаш', desc: 'Зеркальная замена букв' },
+        { url: 'https://studref.com/htm/img/15/6841/2.png', title: 'Квадрат Полибия', desc: 'Координатная сетка 5×5' },
+        { url: 'https://findh.org/wp-content/uploads/2022/02/tablitsa-shifr-vizhenera.png', title: 'Таблица Виженера', desc: 'Полиалфавитный шифр' },
+        { url: 'https://kids.azovlib.ru/images/%D0%98%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20%D0%B2%D0%B5%D1%89%D0%B5%D0%B9/%D0%90%D0%B7%D0%B1%D1%83%D0%BA%D0%B0%20%D0%BC%D0%BE%D1%80%D0%B7%D0%B5.png', title: 'Азбука Морзе', desc: 'Точки и тире' },
+        { url: 'https://nightquests.ru/wp-content/uploads/2017/04/shifr_playfair.png', title: 'Шифр Плейфера', desc: 'Биграммный шифр' }
+      ];
+
+      let currentIndex = 0;
+
+      // Инициализация Dialog (jQuery UI)
+      $('#imageDialog').dialog({
+        autoOpen: false,
+        width: 700,
+        height: 500,
+        modal: true,
+        show: { effect: 'fade', duration: 400 },
+        hide: { effect: 'fade', duration: 300 },
+        buttons: {
+          'ЗАКРЫТЬ': function() { $(this).dialog('close'); }
+        }
+      });
+
+      // Рендер миниатюр
+      function renderThumbnails() {
+        let html = '';
+        images.forEach(function(img, i) {
+          html += '<img src="' + img.url + '" data-index="' + i + '" alt="' + img.title + '" title="' + img.title + '">';
+        });
+        $('#thumbnails').html(html);
+
+        // Draggable миниатюры (jQuery UI)
+        $('#thumbnails img').draggable({
+          revert: true,
+          opacity: 0.7,
+          cursor: 'move',
+          start: function() { $(this).css('border-color', '#FFD700'); },
+          stop: function() { $(this).css('border-color', '#333'); }
+        });
+      }
+
+      // Показ изображения
+      function showImage(index) {
+        currentIndex = index;
+        $('#mainImage').fadeOut(200, function() {
+          $(this).attr('src', images[index].url).fadeIn(300);
+        });
+        $('#imageCaption').text(images[index].desc);
+        $('#thumbnails img').css('border-color', '#333');
+        $('#thumbnails img[data-index="' + index + '"]').css('border-color', '#00FF41');
+      }
+
+      renderThumbnails();
+      showImage(0);
+
+      // Клик по главному изображению → Dialog
+      $('#mainImage').click(function() {
+        $('#dialogImage').attr('src', images[currentIndex].url);
+        $('#dialogCaption').text(images[currentIndex].desc);
+        $('#imageDialog').dialog('open');
+      });
+
+      // Навигация
+      $('#prevBtn').click(function() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showImage(currentIndex);
+      });
+      $('#nextBtn').click(function() {
+        currentIndex = (currentIndex + 1) % images.length;
+        showImage(currentIndex);
+      });
+
+      // Добавление
+      $('#addBtn').click(function() {
+        const url = $('#addUrl').val().trim();
+        const title = $('#addTitle').val().trim();
+        if (url && title) {
+          images.push({ url, title, desc: title });
+          localStorage.setItem('jq_gallery', JSON.stringify(images));
+          renderThumbnails();
+          $('#addUrl').val('');
+          $('#addTitle').val('');
+        }
+      });
+
+      // Клавиши
+      $(document).keydown(function(e) {
+        if (e.key === 'ArrowLeft') $('#prevBtn').click();
+        if (e.key === 'ArrowRight') $('#nextBtn').click();
+        if (e.key === 'Escape') $('#imageDialog').dialog('close');
+      });
+    });
+  </script>
 </body>
 </html>

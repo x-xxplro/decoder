@@ -3,96 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DECODER | Регистрация</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>DECODER | Профиль</title>
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/dark-hive/jquery-ui.css">
+  <link rel="stylesheet" href="styles.css">
   <style>
-    .register-page { max-width: 500px; margin: 0 auto; padding: 1rem; }
-
+    .register-page { max-width: 550px; margin: 0 auto; padding: 1rem; }
     .form-group { margin-bottom: 1rem; }
-
-    .form-group label {
-      display: block;
-      color: #888;
-      font-size: 0.8rem;
-      margin-bottom: 0.3rem;
-      letter-spacing: 1px;
-    }
-
-    .form-group input {
-      width: 100%;
-      padding: 0.6rem;
-      border: 1px solid #333;
-      background: #111;
-      color: #00FF41;
-      font-family: monospace;
-      font-size: 0.9rem;
-    }
-
-    .form-group .error {
-      color: #FF3333;
-      font-size: 0.7rem;
-      display: none;
-    }
-
-    .form-group.error input {
-      border-color: #FF3333;
-    }
-
-    .form-group.error .error {
-      display: block;
-    }
-
-    .form-tabs {
-      display: flex;
-      gap: 0;
-      margin-bottom: 3rem; /* БЫЛО 1.5rem */
-    }
-
-    .form-tabs button {
-      flex: 1;
-      font-family: monospace;
-      background: transparent;
-      color: #888;
-      border: 1px solid #333;
-      padding: 0.8rem;
-      cursor: pointer;
-      font-size: 0.9rem;
-    }
-
-    .form-tabs button.active {
-      color: #00FF41;
-      border-color: #00FF41;
-      background: rgba(0,255,65,0.05);
-    }
-
-    .form-panel {
-      display: none;
-      margin-top: 1rem; /* ДОБАВИЛ */
-    }
-
-    .form-panel.active {
-      display: block;
-    }
-
-    .success-msg {
-      text-align: center;
-      color: #00FF41;
-      padding: 2rem;
-      border: 1px solid #00FF41;
-      display: none;
-    }
-
-    .strength-bar {
-      height: 4px;
-      background: #333;
-      margin-top: 0.3rem;
-    }
-
-    .strength-bar div {
-      height: 100%;
-      transition: width 0.3s;
-    }
+    .form-group label { display: block; color: #888; font-size: 0.8rem; margin-bottom: 0.3rem; letter-spacing: 1px; }
+    .form-group input { width: 100%; padding: 0.6rem; font-family: monospace; font-size: 0.9rem; }
+    .strength-bar { height: 6px; background: #333; margin-top: 0.3rem; border-radius: 3px; }
+    .strength-bar div { height: 100%; border-radius: 3px; transition: width 0.3s; }
   </style>
 </head>
 <body>
@@ -100,92 +20,107 @@
     <header class="library-header">
       <div class="header-line"><span class="prompt-symbol">></span></div>
       <h1 class="main-title" style="font-size:2.5rem;"><span class="glitch-text" data-text="ПРОФИЛЬ">ПРОФИЛЬ</span></h1>
+      <div class="subtitle-container">
+        <span class="line-decoration"></span>
+        <p class="subtitle">jQuery UI Tabs + Datepicker</p>
+        <span class="line-decoration"></span>
+      </div>
     </header>
 
-    <div class="form-tabs">
-      <button class="active" data-tab="login">[ ВХОД ]</button>
-      <button data-tab="register">[ РЕГИСТРАЦИЯ ]</button>
+    <!-- Tabs (jQuery UI) -->
+    <div id="profileTabs">
+      <ul>
+        <li><a href="#tab-login">ВХОД</a></li>
+        <li><a href="#tab-register">РЕГИСТРАЦИЯ</a></li>
+      </ul>
+
+      <!-- Вкладка ВХОД -->
+      <div id="tab-login">
+        <form id="loginForm">
+          <div class="form-group">
+            <label>EMAIL</label>
+            <input type="text" id="loginEmail" class="ui-widget ui-corner-all" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label>ПАРОЛЬ</label>
+            <input type="password" id="loginPass" class="ui-widget ui-corner-all" placeholder="••••••••">
+          </div>
+          <button type="submit" class="ui-button ui-widget ui-corner-all" style="width:100%;padding:0.8rem;font-size:1rem;">ВОЙТИ</button>
+        </form>
+      </div>
+
+      <!-- Вкладка РЕГИСТРАЦИЯ -->
+      <div id="tab-register">
+        <form id="registerForm">
+          <div class="form-group">
+            <label>ИМЯ</label>
+            <input type="text" id="regName" class="ui-widget ui-corner-all" placeholder="Ваше имя">
+          </div>
+          <div class="form-group">
+            <label>ФАМИЛИЯ</label>
+            <input type="text" id="regSurname" class="ui-widget ui-corner-all" placeholder="Ваша фамилия">
+          </div>
+          <div class="form-group">
+            <label>EMAIL</label>
+            <input type="text" id="regEmail" class="ui-widget ui-corner-all" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label>ДАТА РОЖДЕНИЯ</label>
+            <input type="text" id="regBirth" class="ui-widget ui-corner-all" placeholder="дд.мм.гггг">
+          </div>
+          <div class="form-group">
+            <label>СТРАНА</label>
+            <input type="text" id="regCountry" class="ui-widget ui-corner-all" placeholder="Название страны...">
+          </div>
+          <div class="form-group">
+            <label>ПАРОЛЬ</label>
+            <input type="password" id="regPass" class="ui-widget ui-corner-all" placeholder="••••••••">
+            <div class="strength-bar"><div id="strengthFill" style="width:0%;"></div></div>
+          </div>
+          <button type="submit" class="ui-button ui-widget ui-corner-all" style="width:100%;padding:0.8rem;font-size:1rem;">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        </form>
+      </div>
     </div>
 
-    <!-- Форма входа -->
-    <div class="form-panel active" id="loginPanel">
-      <form id="loginForm">
-        <div class="form-group">
-          <label>EMAIL</label>
-          <input type="text" id="loginEmail" placeholder="your@email.com" title="Введите email для входа">
-          <div class="error">Введите корректный email</div>
-        </div>
-        <div class="form-group">
-          <label>ПАРОЛЬ</label>
-          <input type="password" id="loginPass" placeholder="••••••••" title="Введите пароль">
-          <div class="error">Пароль обязателен</div>
-        </div>
-        <button type="submit" style="width:100%;font-family:monospace;background:transparent;color:#00FF41;border:1px solid #00FF41;padding:0.8rem;cursor:pointer;">[ ВОЙТИ ]</button>
-      </form>
-    </div>
+    <button class="nav-button" onclick="location.href='index.html'" style="margin:1.5rem auto;display:flex;">НА ГЛАВНУЮ</button>
+  </div>
 
-    <!-- Форма регистрации -->
-    <div class="form-panel" id="registerPanel">
-      <form id="registerForm">
-        <div class="form-group">
-          <label>ИМЯ</label>
-          <input type="text" id="regName" placeholder="Ваше имя" title="Введите ваше имя">
-          <div class="error">Имя должно содержать минимум 2 буквы</div>
-        </div>
-        <div class="form-group">
-          <label>ФАМИЛИЯ</label>
-          <input type="text" id="regSurname" placeholder="Ваша фамилия" title="Введите вашу фамилию">
-          <div class="error">Фамилия обязательна</div>
-        </div>
-        <div class="form-group">
-          <label>EMAIL</label>
-          <input type="text" id="regEmail" placeholder="your@email.com" title="Введите email адрес">
-          <div class="error">Введите корректный email</div>
-        </div>
-        <div class="form-group">
-          <label>ПАРОЛЬ</label>
-          <input type="password" id="regPass" placeholder="••••••••" title="Минимум 6 символов">
-          <div class="strength-bar"><div id="strengthFill" style="width:0%;"></div></div>
-          <div class="error">Пароль должен содержать минимум 6 символов</div>
-        </div>
-        <button type="submit" style="width:100%;font-family:monospace;background:transparent;color:#00FF41;border:1px solid #00FF41;padding:0.8rem;cursor:pointer;">[ ЗАРЕГИСТРИРОВАТЬСЯ ]</button>
-      </form>
-    </div>
-
-    <div class="success-msg" id="regSuccess">
-      ✅ Регистрация успешна!<br>
-      <span style="font-size:0.8rem;color:#888;">Данные сохранены в localStorage</span>
-    </div>
-
-    <button class="nav-button" onclick="location.href='index.html'" style="margin:1.5rem auto;display:flex;">[ НА ГЛАВНУЮ ]</button>
+  <!-- Диалог -->
+  <div id="regDialog" title="Результат" style="display:none;">
+    <p id="regDialogMsg"></p>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js"></script>
   <script>
     $(function() {
-      // Tooltips
-      $('input').tooltip({ position: { my: 'left+15 center', at: 'right center' } });
-
-      // Переключение вкладок с плавной анимацией
-      $('.form-tabs button').click(function() {
-        const tab = $(this).data('tab');
-        const $currentPanel = $('.form-panel.active');
-        const $newPanel = $('#' + tab + 'Panel');
-        
-        if ($currentPanel.attr('id') === $newPanel.attr('id')) return;
-        
-        // Меняем активную вкладку
-        $('.form-tabs button').removeClass('active');
-        $(this).addClass('active');
-        
-        // Плавная анимация перехода
-        $currentPanel.fadeOut(300, function() {
-          $currentPanel.removeClass('active');
-          $newPanel.css({ opacity: 0, display: 'block' }).addClass('active').animate({ opacity: 1 }, 400);
-        });
+      // Tabs (jQuery UI)
+      $('#profileTabs').tabs({
+        show: { effect: 'fade', duration: 300 },
+        hide: { effect: 'fade', duration: 200 }
       });
-      // Индикатор силы пароля
+
+      // Datepicker (jQuery UI)
+      $('#regBirth').datepicker({
+        dateFormat: 'dd.mm.yy',
+        changeYear: true,
+        yearRange: '1950:2010',
+        showAnim: 'slideDown'
+      });
+
+      // Autocomplete страны (jQuery UI)
+      const countries = ['Россия', 'Беларусь', 'Казахстан', 'Украина', 'Армения', 'Узбекистан', 'Кыргызстан', 'Таджикистан'];
+      $('#regCountry').autocomplete({ source: countries });
+
+      // Dialog (jQuery UI)
+      $('#regDialog').dialog({
+        autoOpen: false,
+        width: 400,
+        modal: true,
+        buttons: { 'OK': function() { $(this).dialog('close'); } }
+      });
+
+      // Сила пароля
       $('#regPass').on('input', function() {
         const val = $(this).val();
         let strength = 0;
@@ -202,16 +137,16 @@
       // Регистрация
       $('#registerForm').on('submit', function(e) {
         e.preventDefault();
-        const data = {
-          name: $('#regName').val().trim(),
-          surname: $('#regSurname').val().trim(),
-          email: $('#regEmail').val().trim(),
-          pass: $('#regPass').val()
-        };
-        if (data.name.length >= 2 && data.surname.length > 0 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email) && data.pass.length >= 6) {
+        const name = $('#regName').val().trim();
+        const email = $('#regEmail').val().trim();
+        if (name.length >= 2 && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && $('#regPass').val().length >= 6) {
+          const data = { name, surname: $('#regSurname').val(), email, birth: $('#regBirth').val(), country: $('#regCountry').val() };
           localStorage.setItem('decoder_user', JSON.stringify(data));
-          $(this).slideUp();
-          $('#regSuccess').slideDown();
+          $('#regDialogMsg').html('<span style="color:#00FF41;">✅ Регистрация успешна!</span>');
+          $('#regDialog').dialog('open');
+        } else {
+          $('#regDialogMsg').html('<span style="color:#FF3333;">❌ Проверьте поля!</span>');
+          $('#regDialog').dialog('open');
         }
       });
 
@@ -220,10 +155,11 @@
         e.preventDefault();
         const saved = JSON.parse(localStorage.getItem('decoder_user') || '{}');
         if ($('#loginEmail').val() === saved.email && $('#loginPass').val() === saved.pass) {
-          alert('Вход выполнен! Добро пожаловать, ' + saved.name);
+          $('#regDialogMsg').html('<span style="color:#00FF41;">✅ Добро пожаловать, ' + saved.name + '!</span>');
         } else {
-          alert('Неверный email или пароль');
+          $('#regDialogMsg').html('<span style="color:#FF3333;">❌ Неверный email или пароль</span>');
         }
+        $('#regDialog').dialog('open');
       });
     });
   </script>
